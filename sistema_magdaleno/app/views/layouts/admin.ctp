@@ -85,7 +85,7 @@
 		
 	</div>
 	<div id="footer">
-			<p><font color="black"><b>Siguenos en nuestras Redes Sociales</b></font><br>
+			<p><font color="black"><b>Siguenos en nugdfgfdgestras Redes Sociales</b></font><br>
 				<a href="https://www.facebook.com/ElPuntoArtesanalDeMagdaleno?ref=hl" target="_blank" alt="Facebook" style="margin-top:-20px;"><img src="<?php echo $html->url('/',true)?>/images/facebook.png" width="50" height="50" onmouseover="toolTip(' Facebook ',this)" /></a>
 				<a href="https://twitter.com/yoneylith" alt="Twitter" target="_blank" ><img src="<?php echo $html->url('/',true)?>/images/twitter.png" width="50" height="50" onmouseover="toolTip(' Twitter ',this)"/></a>
 			</p>

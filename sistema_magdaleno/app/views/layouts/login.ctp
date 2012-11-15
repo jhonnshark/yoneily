@@ -60,14 +60,20 @@
                        <?php echo $session->flash('auth');?>
 
 		</div>
-		<div id="footer">
-		<span id="toolTipBox"> </span>
-		<p><font color="black"><b>Siguenos en nuestras Redes Sociales</b></font><br>
-			<a href="#" alt="Facebook"  style="margin-top:-20px;"><img src="<?php echo $html->url('/',true)?>/images/facebook.png" width="50" height="50" onmouseover="toolTip(' Facebook ',this)" /></a>
-			<a href="#" alt="Twitter" ><img src="<?php echo $html->url('/',true)?>/images/twitter.png" width="50" height="50" onmouseover="toolTip(' Twitter ',this)"/></a>
-		</p>
-		</div>
+		
 	</div>
+<footer>
+            <div id="footer">
+                <section class="footer_bottom">
+                	<div class="inner">
+                
+                    	<div class="block_copyrights">
+                        	<p>J.E.ED &copy; 2012&nbsp;&nbsp;|&nbsp;&nbsp;Richar Pérez, Yoneylith Osorio</p>                        </div>                        
+                        <div class="clearboth"></div>
+                    </div>
+                </section>
+            </div>
+        </footer>
 </center>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
