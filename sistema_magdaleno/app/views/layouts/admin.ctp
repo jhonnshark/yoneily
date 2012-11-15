@@ -35,7 +35,7 @@
 	?>
 	<script type="text/javascript" src="<?php echo $html->url('/')?>js/tooltic.js"></script>
     <?php echo $javascript->link(array('jquery-1.4.2.min','jquery-ui-1.8.5.custom.min','prueba','tiny_mce/tiny_mce.js','farbtastic','jquery.counter-1.0','jquery.floatingbox','jquery.validate'));?>
-    <?php echo $html->css(array('main','jquery-ui-1.8.5.custom','nuevo_admin'));?>
+    <?php echo $html->css(array('main','jquery-ui-1.8.5.custom','nuevo_admin','menuv'));?>
        
 </head>
 <body>
