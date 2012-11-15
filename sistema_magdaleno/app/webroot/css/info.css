@@ -1,0 +1,32 @@
+fieldset.comentario{ 
+			background-color:#E1E2EF;
+			border:solid 0px black;
+			-moz-border-radius:12px;
+			-webkit-border-radius:12px; 
+			-moz-border-radius-bottomleft:12px;
+			-moz-border-radius-topleft:12px;	
+			-webkit-border-bottom-left-radius:14px; 
+			-webkit-border-top-left-radius:14px;
+			-moz-box-shadow:0 0 6px #ddd;
+			-webkit-box-shadow:0 0 6px #ddd;
+			width:465px;	
+				margin-bottom:5px;
+				margin-top:5px;
+			/*height:300px;			*/
+}
+#frame{ 
+			background-color:#E1E2EF;
+			border:solid 0px black;
+			-moz-border-radius:12px;
+			-webkit-border-radius:12px; 
+			-moz-border-radius-bottomleft:12px;
+			-moz-border-radius-topleft:12px;	
+			-webkit-border-bottom-left-radius:14px; 
+			-webkit-border-top-left-radius:14px;
+			-moz-box-shadow:0 0 6px #ddd;
+			-webkit-box-shadow:0 0 6px #ddd;
+			width:465px;	
+				margin-bottom:5px;
+				margin-top:5px;
+			/*height:300px;			*/
+}

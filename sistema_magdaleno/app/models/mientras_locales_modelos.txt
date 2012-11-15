@@ -1,0 +1,125 @@
+<?php
+class Locale extends AppModel {
+	var $name = 'Locale';
+	var $primaryKey = 'id_local';
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+        var $displayField = 'thumbnails';
+
+        var $validate = array(
+            'rif'=>array(
+                'rule'=>array('notEmpty'),
+                'message' => '* Requerido'
+            ),
+			'nombre_empresa' => array(
+                'userrule3' => array(
+                    'rule' => array('notEmpty'),
+                    'message' => '* Requerido'
+                )
+            ),
+            /*'thumbnails' => array(
+                'userrule3' => array(
+                    'rule' => array('notEmpty'),
+                    'message' => '* Requerido'
+                )
+            ),*/
+			'telefono_cel'=>array(
+                'rule'=>array('notEmpty'),
+                'message' => '* Requerido'
+            ),
+			'telefono_office' => array(
+                'userrule3' => array(
+                    'rule' => array('notEmpty'),
+                    'message' => '* Requerido'
+                )
+            ),
+            'puntuacion_positiva' => array(
+                'userrule3' => array(
+                    'rule' => array('notEmpty'),
+                    'message' => '* Requerido'
+                )
+            ),
+			'puntuacion_negativa'=>array(
+                'rule'=>array('notEmpty'),
+                'message' => '* Requerido'
+            ),
+			'encargado_nombre' => array(
+                'userrule3' => array(
+                    'rule' => array('notEmpty'),
+                    'message' => '* Requerido'
+                )
+            ),
+            'encargado_apellido' => array(
+                'userrule3' => array(
+                    'rule' => array('notEmpty'),
+                    'message' => '* Requerido'
+                )
+            ),
+			'encargado_cedula'=>array(
+                'rule'=>array('notEmpty'),
+                'message' => '* Requerido'
+            ),
+			'n_cuenta_uno' => array(
+                'userrule3' => array(
+                    'rule' => array('notEmpty'),
+                    'message' => '* Requerido'
+                )
+            ),
+            'n_cuenta_dos' => array(
+                'userrule3' => array(
+                    'rule' => array('notEmpty'),
+                    'message' => '* Requerido'
+                )
+            ),
+			'descripcion_n_cuenta_uno'=>array(
+                'rule'=>array('notEmpty'),
+                'message' => '* Requerido'
+            ),
+			'descripcion_n_cuenta_dos' => array(
+                'userrule3' => array(
+                    'rule' => array('notEmpty'),
+                    'message' => '* Requerido'
+                )
+            ),
+			'direccion' => array(
+                'userrule3' => array(
+                    'rule' => array('notEmpty'),
+                    'message' => '* Requerido'
+                )
+            )
+        );
+
+	var $actsAs = array(
+            'MeioUpload' => array(
+                'thumbnails' => array(
+                    'dir' => 'files{DS}locales/otras',
+                    'create_directory' => true,
+                    //'max_size' => 2097152,
+                    //'max_dimension' => 'w',
+                    'thumbnailQuality' => 50,
+                    'useImageMagick' => true,
+                    'imageMagickPath' => 'files{DS}locales/thumbnails',
+                    'allowed_mime' => array('image/gif', 'image/jpeg', 'image/pjpeg', 'image/png','audio/mpeg','application/x-shockwave-flash','video/x-flv'),
+                    'allowed_ext' => array('.jpg','.JPG', '.jpeg','.JPEG', '.png','.PNG', '.gif','.GIF','.mp3','.swf','.flv'),
+                    /*'thumbsizes' => array(
+                        'chiquita'  => array('width' => 150, 'height' => 150),
+                        //'normal' => array('width' => 100, 'height' => 100),
+                        //'grande'  => array('width' => 800, 'height' => 600)
+                    ),*/
+                    //'default_class' => 'Archivo',
+               )
+        )
+    );
+     
+        var $belongsTo = array(
+		'User' => array(
+			'className' => 'User',
+			'foreignKey' => 'usuario_id_usuario',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
+
+
+}
+?>
