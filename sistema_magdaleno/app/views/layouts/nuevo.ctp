@@ -193,7 +193,7 @@ $('document').ready(function(){
 							
 						<?php }else{?>
 							<div style="margin-top:0px;">
-								<font face="arial" size="4"><b><a id="reg" href="#">Registrate</a> | <a id="log" href="#">Entrar</a>  | <a href="http://localhost/sistema_magdaleno/users/login" target="_blank">Administrador</a></b></font>
+								<font face="arial" size="4"><b><a id="reg" href="#">Registrate</a> | <a id="log" href="#">Entrar</a>  | <a href="http://localhost/git/yoneily/sistema_magdaleno/users/login" target="_blank">Administrador</a></b></font>
 							</div>
 						<?php }?>
 		
