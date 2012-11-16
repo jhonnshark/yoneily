@@ -1,3 +1,7 @@
+<style type="text/css">
+label {margin-left: 25%;}
+table.index td{text-align: center; border: 0px;}
+</style>
 <script>
 $('document').ready(function(){
 
@@ -57,11 +61,13 @@ $('document').ready(function(){
 
 </script>
 <center>
-<center><img src="<?php echo $html->url('/',true)?>/img/local.png" height="80" /><br/><h1>Registrar Locales</h1></center>
+<center><img src="<?php echo $html->url('/',true)?>/img/local.png" height="80" /><br/></center>
 <div align="center">
 <?php
    echo $form->create('Locale',array('type' => 'file'));
-   echo "<table class=formayuda><tr>";
+   echo "<table class=index>";
+   echo "<tr><td colspan='4'><center><div class='titulo_barra'><h1>Registrar Locales</h1></div></center></td></tr>";
+   echo"<tr>";
    echo "<tr><td>".$form->input('rif', array('label' => 'Rif'))."</td>";
    echo "<td>".$form->input('nombre_empresa', array('label' => 'Nombre Local','maxlength'=>255))."</td>";
    echo "<td>".$form->input('encargado_nombre', array('label' => 'Nombre Encargado','maxlength'=>255))."</td></tr>";
@@ -74,23 +80,24 @@ $('document').ready(function(){
    echo "<tr><td>".$form->input('telefono_office', array('label' => 'Telefono Local'))."</td>";
    echo "<td>".$form->input('n_cuenta_uno', array('label' => 'Numero de Cuenta 1','maxlength'=>20))."</td>";
    echo "<td>".$form->input('n_cuenta_dos', array('label' => 'Numero de Cuenta 2','maxlength'=>20))."</td></tr>";
-   echo "</table>";
+   echo "";
    
-   echo "<table><tr><td>".$form->input('descripcion_n_cuenta_uno', array('label' => 'Descricion Numero de Cuenta 1','type'=>'textarea'))."</td>";
+   echo "<tr><td>".$form->input('descripcion_n_cuenta_uno', array('label' => 'Descricion Numero de Cuenta 1','type'=>'textarea'))."</td>";
    echo "<td>".$form->input('descripcion_n_cuenta_dos', array('label' => 'Descripcion Numero de Cuenta 2','maxlength'=>255,'type'=>'textarea'))."</td>";
-   echo "</tr></table>";
+   echo "</tr>";
    /*echo "<table><tr>";
    echo "<td>".$form->input('password', array('label' => 'Password','type'=>'password','maxlength'=>15,'size'=>'34'))."</td>";
    echo "<td>".$form->input('confpassword', array('label' => 'Confirmar Password','type'=>'password','maxlength'=>15,'size'=>'34'))."</td></tr>";
    echo "</tr></table>";*/
    
-   echo "<table><tr><td>".$form->input('direccion', array('label' => 'Direccion','maxlength'=>500,'type'=>'textarea'))."</td>";
-   echo "<td>".$form->input('correo', array('label' => 'Correo Electronico','maxlength'=>500,'size'=>'33'))."</td></tr>";
-   echo "</table>";
+   echo "<tr><td>".$form->input('direccion', array('label' => 'Direccion','maxlength'=>300,'type'=>'text'))."</td>";
+   echo "<td>".$form->input('correo', array('label' => 'Correo Electronico','maxlength'=>50,'size'=>'20'))."</td></tr>";
+   echo "<tr><td colspan='4'><center><br/>";
    ?>
-   <img src="<?php echo $html->url('/',true)?>/procesos/add.png"  /><font color='navy' size='4'><b> Medios de Pago</b></font>
+   <img src="<?php echo $html->url('/',true)?>/procesos/add.PNG"  /><font color='navy' size='4'><b> Medios de Pago</b></font>
    <?php
-   echo "<table><tr>";
+   echo "</center></td></tr>";
+   echo "<tr>";
    echo "<td class=formpequeno>".$form->input('banco_cuenta_uno',array('label'=>'Banco de Cuenta Uno:','options'=>array(
       'Mercantil'=>'Banco Mercantil',
 	  'Venezuela'=>'Banco de Venezuela',
@@ -119,11 +126,13 @@ $('document').ready(function(){
 	  '0'=>'No'
 	   ),'empty'=>'Seleccione'
        ))."</td>"; 
-   echo "</tr></table>";
+   echo "</tr>";
+   echo "<tr><td colspan='4'><center><br/>";
    ?>
-   <img src="<?php echo $html->url('/',true)?>/procesos/add.png"  /><font color='navy' size='4'><b> Medios de Envio</b></font>
+   <img src="<?php echo $html->url('/',true)?>/procesos/add.PNG"  /><font color='navy' size='4'><b> Medios de Envio</b></font>
    <?php
-    echo "<table><tr>";
+   echo "</center></td></tr>";
+    echo "<tr>";
     echo "<td class=formpequeno>".$form->input('envio_uno',array('label'=>'Medio Envio Uno:','options'=>array(
       'mrw'=>'MRW',
 	  'zoom'=>'Zoom',
@@ -148,14 +157,14 @@ $('document').ready(function(){
 	  '0'=>'Ninguno'
 	   ),'empty'=>'Seleccione Opcion'
     ))."</td>";
-    echo "</tr></table>";
+    echo "</tr>";
    echo "<font size='2'>";
-   echo "<table><tr><td >".$form->input('nombre_file', array('label' => 'Logo del Local','type'=>'file'))."</td></tr>";
-   echo "<tr><td>".$form->input('ubicacion_file', array('label' => 'Ubicacion del Local','type'=>'file'))."</td></tr></table>";
-   echo "</font>";
+   echo "<tr><td colspan='4'><center>".$form->input('nombre_file', array('label' => 'Logo del Local','type'=>'file'))."</center></td></tr>";
+   echo "<tr><td colspan='4'><center>".$form->input('ubicacion_file', array('label' => 'Ubicacion del Local','type'=>'file'))."</center></td></tr>";
+   echo "</font><tr><td colspan=4><br/>";
    echo $this->Form->input('status',array('type'=>'hidden', 'value'=>'1'));
    echo $form->input('usuario_id_usuario', array('type'=>'hidden','value'=>$session->read('Auth.User.id_usuario')));
-   echo '<center>'.$form->end(' Crear Local ').'</center>';
+   echo '<center>'.$form->end(' Crear Local ').'</center><br/></td></tr></table>';
 ?>
 </div>
 

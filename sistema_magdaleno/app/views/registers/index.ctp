@@ -1,3 +1,8 @@
+<style type="text/css">
+label {margin-left: 25%;}
+a {text-decoration: none; color: blue;}
+</style>
+
 <script type="text/javascript">
 	$('document').ready(function(){
 		$('.excel').click(function(event){
@@ -6,12 +11,18 @@
 	    });
 	});
 </script>
-<center><img src="<?php echo $html->url('/',true)?>/img/clientes.png" style="height:110px;" /><br/>
+<center><img src="<?php echo $html->url('/',true)?>/procesos/registers_add.png" width='80'style="height:80px;" /><br/>
 <?php //pr($registers);
 if(!empty($registers)){?>
-<h2>Clientes Registrados</h2>
+
 </center>
-     <table style="margin-left:5px; " class="index" >
+     <table class="index">
+    <tr><td colspan="10" style="padding:0px; margin:0px;">
+        <center>
+         <div class="titulo_barra"><h2>Clientes Registrados</h2></div>
+     </center>
+        </td>
+    </tr>
         <tr >
             <th><?php echo $this->Paginator->sort('ID', 'idregistro'); ?></th>
             <th><?php echo $this->Paginator->sort('Email', 'correo'); ?></th>
@@ -64,24 +75,24 @@ if(!empty($registers)){?>
 		
          <td><?php echo $register['Register']['nombreape']; ?></td>
          <td>
-			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/delete.png">', array('action' => 'delete', $register['Register']['idregistro']), array('escape' => false), 'Estas seguro?' )?></center>
+			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/delete.PNG">', array('action' => 'delete', $register['Register']['idregistro']), array('escape' => false), 'Estas seguro?' )?></center>
         </td>
         <td>
-			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/edit.png">', array('plugin' => 0,'action' => 'edit' , $register['Register']['idregistro']), array('escape' => false))?></center>
+			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/edit.PNG">', array('plugin' => 0,'action' => 'edit' , $register['Register']['idregistro']), array('escape' => false))?></center>
         </td>
 		<td>
 			<?php 
 
 				if($register['Register']['status']=='1')
 				{
-					echo $html->link('<img src="'.$html->url('/',true).'procesos/activo.png"><font size=2> Desactivar</font>', array('plugin' => 0,'action' => 'desactiva' , $register['Register']['idregistro']), array('escape' => false));
+					echo $html->link('<img src="'.$html->url('/',true).'procesos/activo.PNG"><font size=2> Desactivar</font>', array('plugin' => 0,'action' => 'desactiva' , $register['Register']['idregistro']), array('escape' => false));
 				}else{
-					echo $html->link('<img src="'.$html->url('/',true).'procesos/desactivo.png"><font size=2> Activar', array('plugin' => 0,'action' => 'activa' , $register['Register']['idregistro']), array('escape' => false));
+					echo $html->link('<img src="'.$html->url('/',true).'procesos/desactivo.PNG"><font size=2> Activar', array('plugin' => 0,'action' => 'activa' , $register['Register']['idregistro']), array('escape' => false));
 				}
 			?>
         </td>
 		<td>
-             <center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/ver.png" style="width:16px; height:16px;">', array('plugin' => 0,'action' => 'pdf_cliente' , $register['Register']['idregistro']), array('escape' => false))?></center>
+             <center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/ver.PNG" style="width:16px; height:16px;">', array('plugin' => 0,'action' => 'pdf_cliente' , $register['Register']['idregistro']), array('escape' => false))?></center>
         </td>
         </tr>
      <?php endforeach; ?>
@@ -95,7 +106,7 @@ if(!empty($registers)){?>
 <?php echo $this->Paginator->counter(); ?>
  </table>
  
- <div class="excel"  align="center"><a><img src="<?php echo $html->url('/',true)?>/img/reporte_general.png"></a></div>
+ <div class="excel"  align="center"><a><img src="<?php echo $html->url('/',true)?>/img/reporte_general.png" width="80"><br/>Reporte General</a><br/> </div>
  <?php }else{
 	echo "<center><h2>No existen clientes registrados</h2></center>";
  }?>

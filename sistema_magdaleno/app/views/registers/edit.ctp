@@ -1,11 +1,9 @@
-<?php
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-//pr($pais);
-//pr($datos);
-?>
+<style type="text/css">
+label {margin-left: 25%;}
+a {text-decoration: none; color: blue;}
+table.index td{border: 0px;}
+</style>
+
 <script>
 function cargarProvincias(){
  	var idPais= $("#RegisterPais").attr('alt');
@@ -239,11 +237,11 @@ $('document').ready(function(){
 
 
 </script>
-<fieldset >
-<center><img src="<?php echo $html->url('/',true)?>/img/clientes.png" height="80" /><br/><h1>Registrar Cuenta de Cliente</h1></center>
+
+<center><img src="<?php echo $html->url('/',true)?>/procesos/registers_add.png" height="80" /><br/></center>
 
 <center>
-<div style=" width: 585px; height: auto; float: left; margin-top: 20px; margin-left:70px;">
+
   
     <?php
         echo $this->Form->create('Register', array('type'=>'file'));
@@ -259,34 +257,42 @@ $('document').ready(function(){
 	
 
    
-    <table border="0"  style="width:100%; background-color: #ececec;">
+    <table class="index">
+    <tr><td colspan="10" style="padding:0px; margin:0px;">
+        <center>
+         <div class="titulo_barra"><h1>Modificar Cuenta de Cliente</h1></div>
+     </center>
+        </td>
+    </tr>
            <tr>
                 <td class="capti">Email</td>
                 <td ><?php echo $this->Form->input('correo', array("label" => false, "class" => "email","error" => false, "size"=>"20")); ?></td>
+
+                <td class="capti par">Nombre y apellido</td>
+                <td ><?php echo $this->Form->input('nombreape', array("label" => false, "class" => "nomape","error" => false,'maxlength'=>'50')); ?></td>
            
-                <td class="capti par" style="background-color: #ececec">Clave</td>
-                <td style="background-color: #ececec"><?php echo $this->Form->input('password', array("label" => false,"type"=>"password", "class" => "pass", "error" => false)); ?></td>
+                
             </tr>
             <tr id="repclave">
+
+              <td class="capti par">Clave</td>
+                <td ><?php echo $this->Form->input('password', array("label" => false,"type"=>"password", "class" => "pass", "error" => false)); ?></td>
+
+
                 <td class="capti">Repetir Clave</td>
                 <td><?php echo $this->Form->input('rpass', array("label" => false,"type"=>"password", "class" => "rpass","error" => false,"size"=>"20")); ?></td>
            
-                <td class="capti par" style="background-color: #ececec">Nombre y apellido</td>
-                <td style="background-color: #ececec"><?php echo $this->Form->input('nombreape', array("label" => false, "class" => "nomape","error" => false,'maxlength'=>'50')); ?></td>
+                
             
              <tr>
-                <td class="capti par" style="background-color: #ececec">Numero de Celular</td>
-                <td style="background-color: #ececec"><?php echo $this->Form->input('codi',array("class"=>"codigo","label"=>false,"div"=>false,"options" => array($cod),"empty"=>"----"));?><?php echo $this->Form->input('telefono', array("label" => false, "class" => "telefono","div"=>false,"error" => false,"maxlength"=>7,'size'=>'12')); ?></td>
+                <td class="capti par">Numero de Celular</td>
+                <td ><!--<?php echo $this->Form->input('codi',array("class"=>"codigo","label"=>false,"div"=>false,"options" => array($cod),"empty"=>"----"));?>-->
+                  <?php echo $this->Form->input('telefono', array("label" => false, "class" => "telefono","div"=>false,"error" => false,"maxlength"=>10,'size'=>'20')); ?></td>
             
             
                 <td class="capti">Pa&iacute;s</td>
-                <td style="background-color: #ececec; position:relative">
+                <td>
                            <?php
-                                  /*for($j=1;$j<count($pais);$j++)
-                                  {
-                                      $nompais['pais'] = 'pais';
-                                      $nompais[$j] = $pais[$j]['Paise']['nombre'];
-                                  }*/
                                   echo $this->Form->input('pais',array("type"=>"text","class"=>"pais","id"=>"RegisterPais","label"=>false));
                            ?>
                     <div id="#someElem">
@@ -295,69 +301,62 @@ $('document').ready(function(){
 						<img src="<?php echo $html->url('/',true)?>img/countryload.gif" />
 					</div>
                 </td>
-            </tr></table>
-             <table style=" width: 620px; background-color: #ececec;"><tr>
+            </tr>
+              <tr>
                 <td class="capti">Fecha Nacimiento</td>
                 <td>
-						<?php $fecha = date('Y')?>
+            <?php $fecha = date('Y')?>
                         <?php echo $this->Form->input('fechanac',array('label'=>false,'minYear'=>'1940','maxYear'=>$fecha,'dateFormat'=>'DMY','monthNames'=>array('Seleccione','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'))); ?>
                         
 
                </td>
 
-
-            </tr></table>
-            <table style=" width: 620px;"><tr>
-                <td style="background-color: #ececec" class="capti">Sexo</td>
-                <td style="background-color: #ececec">
+               <td class="capti">Sexo</td>
+                <td >
                            <?php
-                                /*echo $form->radio('sexo', array(
-                                         'type' => 'radio',
-                                         'id' => 'sdfsd',
-                                         'name' => 'asdas',
-                                         'options' => array(2=>'Tire Manufacturer', 7=>'Rim Manufacturer '),
-                                 ));*/
-                            $options=array('M'=>'masculino','F'=>'femenino');
+                            $options=array('M'=>'Masculino');
+                            $attributes=array('legend'=>false,'class'=>'auto');
+                           echo $form->radio('sexo',$options,$attributes)."<br/>";
+
+                           $options=array('F'=>'Femenino');
                             $attributes=array('legend'=>false,'class'=>'auto');
                            echo $form->radio('sexo',$options,$attributes);
 
                             ?>
-                           <?php //echo $this->Form->radio('femenino', array()); ?>
                 </td>
+
+            </tr>
+
+            <tr>
+                
            
-                <td style="background-color: #ececec" class="capti">Terminos y Condiciones</td>
-               <td style="background-color: #ececec">
+                <td class="capti">Terminos y Condiciones</td>
+               <td>
                                   <?php
 
                                     echo $this->Form->input('tecon',array("class"=>"auto","label"=>false,"type"=>"checkbox"));
                                   ?>
                </td>
 
-                <td style="background-color: #ececec" class="capti">Sms y Correo</td>
-               <td style="background-color: #ececec">
+                <td class="capti">Sms y Correo</td>
+               <td >
                                   <?php
 
                                     echo $this->Form->input('scor',array("class"=>"auto","label"=>false,"type"=>"checkbox"));
                                   ?>
                </td>
-            </tr></table>
-			<!--
-            <tr>
-                <td class="capti">Cuenta de Twitter</td>
-                <td><?php //echo $this->Form->input('cuentatwitter', array("label" => false, "class" => "twitter","error" => false)); ?></td>
-            </tr>
-             <tr>
-                <td class="capti"><h6>Foto perfil</h6></td>
-                <td><?php //echo $this->Form->input('foto', array("type"=>"file","label" => false, "class" => "foto", "div" => false, "error" => false)); ?></td>
-            </tr>-->
-			<?php echo $this->Form->input('idregistro',array('type'=>'hidden')); ?>
-            <tr>
-
-                <td colspan="2" style="background-color: #ececec; text-align: center;"><?php echo $this->Form->submit('aceptar',array('class' => 'botonreg', 'title' => 'Custom Title')); ?></td>
             </tr>
 
-            </table>
+            <tr>
 
+                <td colspan="4"><center><br/><?php echo $this->Form->submit('Aceptar',array('class' => 'botonreg', 'title' => 'Custom Title')); ?><br/></center></td>
+            </tr>
+
+          </table>
+
+			<?php echo $this->Form->input('idregistro',array('type'=>'hidden')); ?>          
+
+            
 </div>
 </center>
-</fieldset >
+

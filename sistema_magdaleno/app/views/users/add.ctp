@@ -1,4 +1,7 @@
-<script>
+<style type="text/css">
+label {margin-left: 25%;}
+</style>
+	<script>
 $('document').ready(function(){
 
    jQuery.validator.addMethod("accept", function(value, element, param) {
@@ -56,25 +59,27 @@ $('document').ready(function(){
 });
 
 </script>
+
 <center>
-<center><img src="<?php echo $html->url('/',true)?>/img/personal.png" height="80" /><br/><h1>Registrar Usuarios</h1></center>
+<img style="left:50px;" src="<?php echo $html->url('/',true)?>/procesos/users_add.png" height="80" /><br/>
 <div align="center">
+	<div class="capa">
 <?php
    echo $form->create('User');
-   echo "<table><tr>";
    //echo "<td>".$form->input('groups_idgrupos', array('label'=>'Perfil ','options' =>array($groups)))."</td>";
-   echo "<td>Administrador</td>";
-  /* echo $form->input('groups_idgrupos',array('label'=>'Perfil:','options'=>array('1'=>'Administrador'
+   echo "<div class='titulo_barra'><h1>Registrar Usuarios (Administador)</h1></div>";
+     /* echo $form->input('groups_idgrupos',array('label'=>'Perfil:','options'=>array('1'=>'Administrador'
 	   )
        ))."</td>";*/
-	   echo $form->input('groups_idgrupos', array('label' => false,'maxlength'=>30, 'type'=>'hidden', 'value'=>'1'));
-   echo "<td>".$form->input('username', array('label' => 'Nombre de Usuario','maxlength'=>30, 'size'=>'15'))."</td>";
-   echo "<td>".$form->input('perfil_usuario', array('label' => 'Nombre y Apellido','maxlength'=>255))."</td></tr>";
-   echo "<tr><td>".$form->input('email_usuario', array('label' => 'Correo'))."</td>";
-   echo "<td>".$form->input('password', array('label' => 'Password','type'=>'password','maxlength'=>15,'size'=>'15'))."</td>";
-   echo "<td>".$form->input('confpassword', array('label' => 'Confirmar Password','type'=>'password','maxlength'=>8))."</td></tr>";
-   echo "</table>";
-   echo '<center>'.$form->end('Crear Usuario').'</center>';
+	echo "".$form->input('groups_idgrupos', array('label' => false,'maxlength'=>30, 'type'=>'hidden', 'value'=>'1'))."";
+    echo "".$form->input('username', array('label' => 'Nombre de Ususario','maxlength'=>30, 'size'=>'20','required' => 'required'))."";
+    echo "".$form->input('perfil_usuario', array('label' => 'Nombre y Apellido','maxlength'=>255,'required' => 'required'))."";
+    echo "".$form->input('email_usuario', array('label' => 'Correo','email' => 'email','required' => 'required'))."";
+    echo "".$form->input('password', array('label' => 'Password','type'=>'password','maxlength'=>15,'size'=>'20','required' => 'required'))."";
+    echo "".$form->input('confpassword', array('label' => 'Confirmar Password','type'=>'password','maxlength'=>8,'required' => 'required'))."";
+    
+    echo '<br/><center>'.$form->end('Crear Usuario').'</center><br/>';
 ?>
 </div>
 </center>
+</div>

@@ -1,3 +1,8 @@
+<style type="text/css">
+label {margin-left: 25%;}
+a {text-decoration: none; color: blue;}
+</style>
+
 <script type="text/javascript">
 	$('document').ready(function(){
 		$('.excel').click(function(event){
@@ -7,10 +12,16 @@
 	});
 </script>
 <center><img src="<?php echo $html->url('/',true)?>/img/local.png" style="height:110px;" /><br/>
-<h2>Locales Registradas</h2>
+
 </center>
 <?php if(!empty($locales)){ ?>
      <table style="margin-left:5px; " class="index" >
+     	 <tr><td colspan="10" style="padding:0px; margin:0px;">
+        <center>
+         <div class="titulo_barra"><h2>Locales Registradas</h2></div>
+     </center>
+        </td>
+    </tr>
         <tr >
             <th><center><?php echo $this->Paginator->sort('ID', 'id_local'); ?></center></th>
             <th><center><?php echo $this->Paginator->sort('Nombre Local', 'nombre_empresa'); ?></center></th>
@@ -48,24 +59,24 @@
 		
          <td><?php echo $locale['Locale']['encargado_nombre'].' '.$locale['Locale']['encargado_apellido']; ?></td>
          <td>
-			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/delete.png">', array('action' => 'delete', $locale['Locale']['id_local']), array('escape' => false), 'Estas seguro?' )?></center>
+			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/delete.PNG">', array('action' => 'delete', $locale['Locale']['id_local']), array('escape' => false), 'Estas seguro?' )?></center>
         </td>
         <td>
-			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/edit.png">', array('plugin' => 0,'action' => 'edit' , $locale['Locale']['id_local']), array('escape' => false))?></center>
+			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/edit.PNG">', array('plugin' => 0,'action' => 'edit' , $locale['Locale']['id_local']), array('escape' => false))?></center>
         </td>
 		<td>
 			<?php 
 
 				if($locale['Locale']['status']=='1')
 				{
-					echo $html->link('<img src="'.$html->url('/',true).'procesos/activo.png"><font size=2> Desactivar</font>', array('plugin' => 0,'action' => 'desactiva' , $locale['Locale']['id_local']), array('escape' => false));
+					echo $html->link('<img src="'.$html->url('/',true).'procesos/activo.PNG"><font size=2> Desactivar</font>', array('plugin' => 0,'action' => 'desactiva' , $locale['Locale']['id_local']), array('escape' => false));
 				}else{
-					echo $html->link('<img src="'.$html->url('/',true).'procesos/desactivo.png"><font size=2> Activar', array('plugin' => 0,'action' => 'activa' , $locale['Locale']['id_local']), array('escape' => false));
+					echo $html->link('<img src="'.$html->url('/',true).'procesos/desactivo.PNG"><font size=2> Activar', array('plugin' => 0,'action' => 'activa' , $locale['Locale']['id_local']), array('escape' => false));
 				}
 			?>
         </td>
 		<td>
-             <center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/ver.png" style="width:16px; height:16px;">', array('plugin' => 0,'action' => 'pdf' , $locale['Locale']['id_local']), array('escape' => false))?></center>
+             <center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/ver.PNG" style="width:16px; height:16px;">', array('plugin' => 0,'action' => 'pdf' , $locale['Locale']['id_local']), array('escape' => false))?></center>
         </td>
 
         </tr>
@@ -79,7 +90,7 @@
 <!-- prints X of Y, where X is current page and Y is number of pages -->
 <?php echo $this->Paginator->counter(); ?>
  </table>
-<div class="excel"  align="center"><a><img src="<?php echo $html->url('/',true)?>/img/reporte_general.png"></a></div>
+<div class="excel"  align="center"><a><img src="<?php echo $html->url('/',true)?>/img/reporte_general.png" width='80'><br/>Reporte General</a><br/></div>
 <?php }else{
 	echo "<center><h2>No existen datos registrados</h2></center>";
 }

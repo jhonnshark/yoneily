@@ -88,6 +88,7 @@ footer .footer_bottom {
     font-style: italic;
     line-height: 51px;
     padding-bottom: 0;
+    text-align: center;
 }
 .clearboth {
     clear: both;
@@ -260,18 +261,62 @@ div.radio label { width: 80px; float: left;  }
 div.input { margin-top: 15px; }
 div.input span.description { margin-left: 10px; }
 
+
+/**
+* sustituto de la table en add
+*/
+
+.capa{border-bottom: 4px solid #dfdfdf; background-color: #fff; clear: both; width:90%; border-radius: 15px;}
+.titulo_barra{
+ box-shadow: #bbdaf7;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  background-color: #79bbff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-width: 1px;
+  border-right-width-value: 1px;
+  border-bottom-width: 1px;
+  border-left-width-value: 1px;
+  border-top-style: solid;
+  border-right-style-value: solid;
+  border-bottom-style: solid;
+  border-left-style-value: solid;
+  border-top-color: #84bbf3;
+  border-right-color-value: #84bbf3;
+  border-bottom-color: #84bbf3;
+  border-left-color-value: #84bbf3;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 6px;
+  padding-right: 39px;
+  padding-bottom: 6px;
+  padding-left: 39px;
+  text-shadow: #528ecc;
+  width: 93.5%;
+}
+
 /**
  * Tables
  */
  
-table{border: 4px solid #dfdfdf; background-color: #fff; clear: both; width:100px; border-radius: 15px;}
+table{border-bottom: 4px solid #dfdfdf; background-color: #fff; clear: both; width:90%; border-radius: 15px;}
 table tr th { padding: 2px; background-color: #e7e7e7; color: #464646; border-bottom: 0px; text-align: left; }
-table tr td{ padding: 2px; border-bottom: 0px solid #dfdfdf; border-radius: 30px;}
+table tr td{ padding: 2px; border-bottom: 0px solid #dfdfdf;}
 table tr td a{ font-weight: normal; text-decoration: none; padding: 0px 0px 0px 0px; }
 table tr td a:hover { text-decoration: underline; width: auto; height: auto;}
 table tr td div.operations a { font-size: 9px; margin-right: 5px; text-decoration: none; text-transform: lowercase;  width: auto; height: auto; }
-table.index{ width: 700px; border: 0px solid #dfdfdf; background-color: #fff; clear: both; }
-
+table.index{ padding-left: 3px; width: 90%; border-bottom: 4px solid #dfdfdf; background-color: #fff; clear: both; }
+table.index td{padding-left: 5px; border-bottom: 1px solid #ccc;}
 table.formpequeno{border: 0px solid #dfdfdf; background-color: #fff; border-bottom: 5px solid #dfdfdf;  clear: both; width:90%;}
 table.formayuda{border: 0px solid #dfdfdf; background-color: #fff; border-bottom: 5px solid #dfdfdf;  clear: both; width:700px;}
 table.textarea1 { width: 350px; border: 0px solid ; background-color: transparent; }
