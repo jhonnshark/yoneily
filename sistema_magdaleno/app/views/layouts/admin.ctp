@@ -34,8 +34,8 @@
                              
 	?>
 	<script type="text/javascript" src="<?php echo $html->url('/')?>js/tooltic.js"></script>
-    <?php echo $javascript->link(array('jquery-1.4.2.min','jquery-ui-1.8.5.custom.min','prueba','tiny_mce/tiny_mce.js','farbtastic','jquery.counter-1.0','jquery.floatingbox','jquery.validate'));?>
-    <?php echo $html->css(array('main','jquery-ui-1.8.5.custom','nuevo_admin','menuv'));?>
+    <?php echo $javascript->link(array('jquery-1.4.2.min','jquery-ui-1.8.5.custom.min','prueba','tiny_mce/tiny_mce.js','farbtastic','jquery.counter-1.0','jquery.floatingbox','jquery.validate','menu'));?>
+    <?php echo $html->css(array('main','jquery-ui-1.8.5.custom','nuevo_admin','menu'));?>
        
 </head>
 <body>
@@ -57,24 +57,8 @@
 		<?php }?>
 	</center>
 		<div id="content">
-			<?php if($session->read('Auth.User.groups_idgrupos')==1){ ?>
-				<div style="text-align:right;width:770px;">
-					<font color="black" size="4" style="margin-top:10px;"><b><!--<img src="<?php echo $html->url('/',true)?>img/usuario.gif" style="margin-left:5px;width:13px;" />-->
-					<?php echo "<font color=red>Administrador (a): </font> ".$session->read('Auth.User.perfil_usuario'); ?>&nbsp;&nbsp;</b></font>
-					<a href="<?php echo $html->url('/')?>users/logout"><img src="<?php echo $html->url('/',true)?>procesos/cerrarsesion.png" style="margin-left:15px;width:103px;" /></a>
-				
-				</div>
-			<?php }?>
-			<?php if($session->read('Auth.User.groups_idgrupos')==2){ ?>
-				<div style="text-align:right;width:770px;">
-					<font color="black" size="4" style="margin-top:10px;"><b><!--<img src="<?php echo $html->url('/',true)?>img/usuario.gif" style="margin-left:5px;width:13px;" />-->
-					<?php echo "<font color=red>Vendedor (a): </font> ".$session->read('Auth.User.perfil_usuario'); ?>&nbsp;&nbsp;</b></font>
-					<a href="<?php echo $html->url('/')?>users/logout"><img src="<?php echo $html->url('/',true)?>procesos/cerrarsesion.png" style="margin-left:15px;width:103px;" /></a>
-				
-				</div>
-			<?php }?>
+			
 			<div style="width:770px;">
-				<?php echo $this->Session->flash(); ?><br />
 			</div>
 
 			<?php echo $content_for_layout; ?>
@@ -84,12 +68,18 @@
 		</div>
 		
 	</div>
-	<div id="footer">
-			<p><font color="black"><b>Siguenos en nugdfgfdgestras Redes Sociales</b></font><br>
-				<a href="https://www.facebook.com/ElPuntoArtesanalDeMagdaleno?ref=hl" target="_blank" alt="Facebook" style="margin-top:-20px;"><img src="<?php echo $html->url('/',true)?>/images/facebook.png" width="50" height="50" onmouseover="toolTip(' Facebook ',this)" /></a>
-				<a href="https://twitter.com/yoneylith" alt="Twitter" target="_blank" ><img src="<?php echo $html->url('/',true)?>/images/twitter.png" width="50" height="50" onmouseover="toolTip(' Twitter ',this)"/></a>
-			</p>
-			</div>
+	<footer>
+            <div id="footer">
+                <section class="footer_bottom">
+                	<div class="inner">
+                
+                    	<div class="block_copyrights">
+                        	<p>J.E.D &copy; 2012&nbsp;&nbsp;|&nbsp;&nbsp;Richar Pérez, Yoneylith Osorio</p>                        </div>                        
+                        <div class="clearboth"></div>
+                    </div>
+                </section>
+            </div>
+    </footer>
 </center>
 	<?php echo $this->element('sql_dump'); ?>
 </body>

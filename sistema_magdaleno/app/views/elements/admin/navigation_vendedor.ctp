@@ -13,27 +13,6 @@
 
         
 
-        <!--<li>
-            <a href="#"><span class="ui-icon ui-icon-gear"></span><?php __('Extensions'); ?></a>
-            <ul>
-                <li><?php echo $html->link('<span class="ui-icon ui-icon-image"></span>' . __('Themes', true), array('plugin' => 'extensions', 'controller' => 'extensions_themes', 'action' => 'index'), array('escape' => false)); ?></li>
-                <li><?php echo $html->link('<span class="ui-icon ui-icon-script"></span>' . __('Locales', true), array('plugin' => 'extensions', 'controller' => 'extensions_locales', 'action' => 'index'), array('escape' => false)); ?></li>
-                <li><?php echo $html->link('<span class="ui-icon ui-icon-gear"></span>' . __('Plugins', true), array('plugin' => 'extensions', 'controller' => 'extensions_plugins', 'action' => 'index'), array('escape' => false)); ?></li>
-                <li><?php echo $html->link('<span class="ui-icon ui-icon-pin-w"></span>' . __('Hooks', true), array('plugin' => 'extensions', 'controller' => 'extensions_hooks', 'action' => 'index'), array('class' => Configure::read('Admin.menus') ? 'separator' : '', 'escape' => false)); ?></li>
-                <?php
-                if (Configure::read('Admin.menus')) {
-                    foreach (array_keys(Configure::read('Admin.menus')) AS $p) {
-                        if (file_exists(APP.'plugins'.DS.$p.DS.'views'.DS.'elements'.DS.'admin_menu.ctp')) {
-                            echo '<li>';
-                            echo $this->element('admin_menu', array('plugin' => $p));
-                            echo '</li>';
-                        }
-                    }
-                }
-                ?>
-            </ul>
-        </li>-->
-
         <li>
             <a href="#"><span class="ui-icon ui-icon-video"></span><?php __('Multimedia'); ?></a>
             <ul>

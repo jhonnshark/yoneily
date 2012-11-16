@@ -68,12 +68,12 @@
                 	<div class="inner">
                 
                     	<div class="block_copyrights">
-                        	<p>J.E.ED &copy; 2012&nbsp;&nbsp;|&nbsp;&nbsp;Richar Pérez, Yoneylith Osorio</p>                        </div>                        
+                        	<p>J.E.D &copy; 2012&nbsp;&nbsp;|&nbsp;&nbsp;Richar Pérez, Yoneylith Osorio</p>                        </div>                        
                         <div class="clearboth"></div>
                     </div>
                 </section>
             </div>
-        </footer>
+</footer>
 </center>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
