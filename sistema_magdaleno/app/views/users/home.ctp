@@ -9,7 +9,7 @@
 </center><center>Regístrar Usuarios</center></a>
 </td>
 <?php }?>
-<td style="margin-left:100px;height:190px;width:180px;">
+<td style="padding-top:60px;margin-left:100px;height:190px;width:180px;">
 <center>
 <a href="<?php echo $html->url('/')?>registers/add_cliente" style="text-decoration:none;"><img src="<?php echo $html->url('/',true)?>/procesos/registers_add.png" height=80 title="Regístrar Clientes" alt="Regístrar Clientes"/> 
 </center><center>Regístrar Clientes</center>

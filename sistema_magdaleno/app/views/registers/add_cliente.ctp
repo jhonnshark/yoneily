@@ -2,6 +2,7 @@
 label {margin-left: 25%;}
 a {text-decoration: none; color: blue;}
 table.index td{ border: 0px;}
+span{margin-left: -23%;}
 </style>
 
 <script>
@@ -311,10 +312,10 @@ $('document').ready(function(){
                <td  class="capti">Sexo</td>
                 <td>
                            <?php
-                            $options=array('M'=>'Masculino');
+                            $options=array('M'=>'<span>Masculino</span>');
                             $attributes=array('legend'=>false,'class'=>'auto');
                            echo $form->radio('sexo',$options,$attributes)."<br/>";
-                           $options=array('F'=>'Femenino');
+                           $options=array('F'=>'<span>Femenino</span>');
                             $attributes=array('legend'=>false,'class'=>'auto');
                            echo $form->radio('sexo',$options,$attributes);
 
