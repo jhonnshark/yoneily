@@ -1,9 +1,20 @@
+<style type="text/css">
+label {margin-left: 25%;}
+a {text-decoration: none; color: blue;}
+</style>
+
 <center><img src="<?php echo $html->url('/',true)?>/img/ayuda.png" style="height:110px;" /><br/>
-<h2>Preguntas Registradas</h2>
+
 </center>
 <?php //pr($preguntas); 
 if(!empty($preguntas)){ ?>
      <table style="margin-left:5px; " class="index" >
+     	<tr><td colspan="10" style="padding:0px; margin:0px;">
+        <center>
+         <div class="titulo_barra"><h2>Preguntas Registradas</h2></div>
+     </center>
+        </td>
+    </tr>
         <tr >
             <th><?php echo $this->Paginator->sort('ID', 'id_page'); ?></th>
             <th><?php echo $this->Paginator->sort('Nombre y Apellido', 'nombre'); ?></th>
@@ -37,7 +48,7 @@ if(!empty($preguntas)){ ?>
 		</center></td>
 
          <td>
-			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/delete.png">', array('action' => 'delete', $pregunta['Page']['id_page']), array('escape' => false), 'Estas seguro de Eliminar?' )?></center>
+			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/delete.PNG">', array('action' => 'delete', $pregunta['Page']['id_page']), array('escape' => false), 'Estas seguro de Eliminar?' )?></center>
         </td>
         <td>
 			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/ver_lupa.png">', array('plugin' => 0,'action' => 'responder_pregunta' , $pregunta['Page']['id_page']), array('escape' => false))?></center>

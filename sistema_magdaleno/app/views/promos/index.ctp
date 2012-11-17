@@ -1,10 +1,22 @@
-<center><img src="<?php echo $html->url('/',true)?>/img/galeria.png" style="height:110px;" /><br/>
-<h2>Promociones Registradas</h2>
+<style type="text/css">
+label {margin-left: 25%;}
+a {text-decoration: none; color: blue;}
+</style>
+
+
+<center><img src="<?php echo $html->url('/',true)?>/img/galeria.png" style="height:80px;" width='80' /><br/>
+
 </center>
 <?php if(!empty($promociones)){ 
 	$user=$session->read('Auth.User.locale_id_local');
 ?>
      <table style="margin-left:5px; " class="index" >
+     	<tr><td colspan="10" style="padding:0px; margin:0px;">
+        <center>
+         <div class="titulo_barra"><h2>Promociones Registradas</h2></div>
+     </center>
+        </td>
+    </tr>
         <tr >
             <th><?php echo $this->Paginator->sort('ID', 'id_promo'); ?></th>
             <th><?php echo $this->Paginator->sort('Nombre de la Galeria', 'texto_promo'); ?></th>
@@ -41,10 +53,10 @@
 		
          <td><?php echo $gallery['User']['perfil_usuario']; ?></td>
          <td>
-			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/delete.png">', array('action' => 'delete', $gallery['Promo']['id_promo']), array('escape' => false), 'Estas seguro?' )?></center>
+			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/delete.PNG">', array('action' => 'delete', $gallery['Promo']['id_promo']), array('escape' => false), 'Estas seguro?' )?></center>
         </td>
         <td>
-			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/edit.png">', array('plugin' => 0,'action' => 'edit' , $gallery['Promo']['id_promo']), array('escape' => false))?></center>
+			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/edit.PNG">', array('plugin' => 0,'action' => 'edit' , $gallery['Promo']['id_promo']), array('escape' => false))?></center>
         </td>
 		<td>
 			<?php 

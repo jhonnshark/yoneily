@@ -11,7 +11,7 @@ a {text-decoration: none; color: blue;}
 	    });
 	});
 </script>
-<center><img src="<?php echo $html->url('/',true)?>/img/local.png" style="height:110px;" /><br/>
+<center><img src="<?php echo $html->url('/',true)?>/img/local.png" width='80' style="height:80px;" /><br/>
 
 </center>
 <?php if(!empty($locales)){ ?>

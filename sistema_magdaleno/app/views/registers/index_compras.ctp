@@ -6,16 +6,20 @@
 	    });
 	});
 </script>
-<center><img src="<?php echo $html->url('/',true)?>/img/tarjeta.png" style="height:110px;" /><br/>
+<center><img src="<?php echo $html->url('/',true)?>/img/tarjeta.png" style="height:80px;" width='80' /><br/>
 <?php if(!empty($registers)){?>
-<h2>Compras Registradas</h2>
+
 </center>
-     <table style="margin-left:5px;width:690px; "  >
+     <table class="index">
+     	<tr><td colspan="10" style="padding:0px; margin:0px;">
+        <center>
+         <div class="titulo_barra"><h2>Compras Registradas</h2></div>
+     </center>
+        </td>
+    </tr>
         <tr >
             <th><center><?php echo $this->Paginator->sort('ID', 'idregistro'); ?></center></th>
             <th><center><?php echo $this->Paginator->sort('Email', 'correo'); ?></center></th>
-			<!--<th><center>Sexo</center></th>
-			<th><center>Status</center></th>-->
             <th><center>Nombre Cliente</center></th>
 			<th><center>Producto</center></th>
 			<th><center>Confirmaci&oacute;n de Compra</center></th>
@@ -26,39 +30,13 @@
        </tr>
      <!-- Aqui se hace el ciclo que recorre nuestros arreglo $posts , imprimiendo la información de cada post-->
      <?php 
-	 //pr($registers);
+	 
 	 foreach ($registers as $register): ?>
         <tr>
         <td><?php echo $register['Register']['idregistro']; ?></td>
 
         <td><?php echo $register['Register']['correo']; ?></td>
         	
-		<!--<td><center>
-		<?php 
-			
-			if($register['Register']['sexo']=='M')
-				{
-					echo '<font color="green"><b>M</b></font>';
-				}
-				else
-				{
-					echo '<font color="red"><b>F</b></font>';
-				}
-		?>
-		</center></td>
-		<td><center>
-		<?php 
-			
-			if($register['Register']['status']=='1')
-				{
-					echo '<font color="green"><b>Activo</b></font>';
-				}
-				else
-				{
-					echo '<font color="red"><b>Inactivo</b></font>';
-				}
-		?>
-		</center></td>-->
 		
          <td><center><?php echo $register['Register']['nombreape']; ?></center></td>
 		 <?php if(!empty($register['Gallery']['texto_galeria']) and !empty($register['Gallery']['precio']) and !empty($register['Venta']['cantidad'])){?>
@@ -89,10 +67,7 @@
 			?>
         </center></td>
 		<td>
-             <center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/ver.png" style="width:16px; height:16px;">', array('plugin' => 0,'action' => 'pdf' , $register['Venta']['id_venta']), array('escape' => false))?></center>
-			 <!--<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/ver.png" style="width:16px; height:16px;">', array('plugin' => 0,'action' => 'pdf' , $register['Register']['idregistro']), array('escape' => false))?></center>-->
-			 
-			 
+             <center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/ver.PNG" style="width:16px; height:16px;">', array('plugin' => 0,'action' => 'pdf' , $register['Venta']['id_venta']), array('escape' => false))?></center>	 	 
         </td>
         </tr>
      <?php endforeach; ?>
@@ -106,7 +81,7 @@
 <?php echo $this->Paginator->counter(); ?>
  </table>
  
- <div class="excel"  align="center"><a><img src="<?php echo $html->url('/',true)?>/img/reporte_general.png"></a></div>
+ <div class="excel"  align="center"><a><img src="<?php echo $html->url('/',true)?>/img/reporte_general.png" width='80'><br/> Reporte General</a></div>
  <?php }else{
-	echo "<center><h2>No existen compras registradas</h2></center>";
+	echo "<center><h2 style='color:#fff;'>No existen compras registradas</h2></center>";
  }?>

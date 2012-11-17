@@ -317,6 +317,7 @@ table tr td a:hover { text-decoration: underline; width: auto; height: auto;}
 table tr td div.operations a { font-size: 9px; margin-right: 5px; text-decoration: none; text-transform: lowercase;  width: auto; height: auto; }
 table.index{ padding-left: 3px; width: 90%; border-bottom: 4px solid #dfdfdf; background-color: #fff; clear: both; }
 table.index td{padding-left: 5px; border-bottom: 1px solid #ccc;}
+
 table.formpequeno{border: 0px solid #dfdfdf; background-color: #fff; border-bottom: 5px solid #dfdfdf;  clear: both; width:90%;}
 table.formayuda{border: 0px solid #dfdfdf; background-color: #fff; border-bottom: 5px solid #dfdfdf;  clear: both; width:700px;}
 table.textarea1 { width: 350px; border: 0px solid ; background-color: transparent; }

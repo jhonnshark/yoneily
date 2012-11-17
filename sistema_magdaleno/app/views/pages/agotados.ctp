@@ -1,10 +1,15 @@
-<center><img src="<?php echo $html->url('/',true)?>/img/folder2_grey.png" style="height:110px;" /><br/></center>
+<center><img src="<?php echo $html->url('/',true)?>/img/folder2_grey.png" style="height:80px;" width='80'/><br/></center>
 
 <?php //pr($galerias); 
 if(!empty($galerias)){ ?>
-<center><h2>Productos Agotados</h2>
-</center>
+
      <table style="margin-left:5px; text-align:center;" class="index" >
+     	<tr><td colspan="10" style="padding:0px; margin:0px;">
+        <center>
+         <div class="titulo_barra"><h2>Productos Agotados</h2></div>
+     </center>
+        </td>
+    </tr>
         <tr >
             <th><center><?php echo $this->Paginator->sort('ID', 'id_galeria'); ?></center></th>
             <th><center><?php echo $this->Paginator->sort('Producto', 'texto_galeria'); ?></center></th>
@@ -47,18 +52,22 @@ if(!empty($galerias)){ ?>
 <?php echo $this->Paginator->counter(); ?>
  </table>
  <?php }else{
-	echo "<center><h2>No existen productos agotados</h2></center>";
+	echo "<center><h2 style='color:#fff;'>No existen productos agotados</h2></center>";
 }
 ?>
 
 <!--PROMOCIONES -->
-
+<br/>
 <?php //pr($promociones); 
 if(!empty($promociones)){ ?>
-<center>
-<h2>Promociones Agotados</h2>
-</center>
+
      <table style="margin-left:5px; text-align:center;" class="index" >
+     	<tr><td colspan="10" style="padding:0px; margin:0px;">
+        <center>
+         <div class="titulo_barra"><h2>Promociones Agotadas</h2></div>
+     </center>
+        </td>
+    </tr>
         <tr >
             <th><center><?php echo $this->Paginator->sort('ID', 'id_promo'); ?></center></th>
             <th><center><?php echo $this->Paginator->sort('Producto', 'texto_promo'); ?></center></th>
@@ -101,6 +110,6 @@ if(!empty($promociones)){ ?>
 <?php echo $this->Paginator->counter(); ?>
  </table>
  <?php }else{
-	echo "<center><h2>No existen promociones agotadas</h2></center>";
+	echo "<center><h2 style='color:#fff;'>No existen promociones agotadas</h2></center>";
 }
 ?>

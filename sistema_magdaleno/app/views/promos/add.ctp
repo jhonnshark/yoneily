@@ -1,3 +1,9 @@
+<style type="text/css">
+label {margin-left: 25%;}
+span{margin-left: -25%;}
+#buscar_seleccion{width: 250px;}
+</style>
+
 <script type="text/javascript">
     $('document').ready(function(){
 	//BUSCAR PROVEEDOR
@@ -26,35 +32,38 @@
 	$(".ui-autocomplete").css({'top':'1%'});
 	});
 </script>
-<center><img src="<?php echo $html->url('/',true)?>/img/galeria.png" style="height:110px;" /><br/>
-<h2>Registrar Promoci&oacute;n</h2>
+<center><img src="<?php echo $html->url('/',true)?>/img/galeria.png" style="height:80px;" width='80' /><br/>
+
 </center>
+<div class="capa">
 <?php
-	//pr($empresa);
+	echo "<div class='titulo_barra'><h2>Registrar Promoci&oacute;n</h2></div>";
 	echo $form->create('Promo',array('type' => 'file'));
-    echo "<table class='formpequeno'><tr><td>".$form->input('texto_promo',array('label'=>'T&iacute;tulo de la  Promoci&oacute;n'))."</td>";
-    echo "<td>".$form->input('claves',array('label'=>'Palabras Claves'))."</td></tr>";
-    echo "<tr><td class='alerta'><table class='alerta'><tr class='alerta'><td class='alerta'>".$form->input('cantidad',array('label'=>'Cantidad','size'=>4))."</td><td>".$form->input('cantidad_alerta',array('label'=>'Cant. Alerta','size'=>5))."</td></tr></table></td>";
-    echo "<td>".$form->input('precio',array('label'=>'Precio por Producto'))."</td></tr>";
+    echo $form->input('texto_promo',array('label'=>'T&iacute;tulo de la  Promoci&oacute;n'));
+    echo $form->input('claves',array('label'=>'Palabras Claves'));
+    echo $form->input('cantidad',array('label'=>'Cantidad','size'=>20));
+    echo $form->input('cantidad_alerta',array('label'=>'Cant. Alerta','size'=>20));
+    echo $form->input('precio',array('label'=>'Precio por Producto'));
     if(!empty($empresa)){
-		echo "<tr><td>".$form->input('locale_id_local',array('label'=>'Nombre del Local','value'=>$empresa,'disabled'=>'disabled'))."</td>";
-		echo $form->input('locale_id_local',array('label'=>false,'value'=>$empresa,'type'=>'hidden'))."</td>";
+		echo $form->input('locale_id_local',array('label'=>'Nombre del Local','value'=>$empresa,'disabled'=>'disabled'));
+		echo $form->input('locale_id_local',array('label'=>false,'value'=>$empresa,'type'=>'hidden'));
     }else{
-		echo "<tr><td>".$form->input('locale_id_local',array('label'=>'Nombre del Local','id'=>'buscar_local'))."</td>";
+		echo $form->input('locale_id_local',array('label'=>'Nombre del Local','id'=>'buscar_local'));
 	}
-	echo "<td class=formpequeno>".$form->input('garantia',array('label'=>'Garantia:','id'=>'buscar_seleccion','options'=>array(
+	echo $form->input('garantia',array('label'=>'Garantia:','id'=>'buscar_seleccion','options'=>array(
       'Si'=>'Si',
 	  'No'=>'No'
 	   ),'empty'=>'Seleccione'
-       ))."</td>";
-	echo "</tr></table>";
-    echo "<table><tr><td>".$form->input('thumbnails',array('type'=>'file','label'=>'Subir Imagen del Producto'))."</td>";
-    echo "<td>".$form->input('publicar',array('type'=>'checkbox','label'=>'Publicar'))."</td></tr></table>";
-    echo "<center><table class='textarea1' ><tr ><td >".$form->input('descripcion',array('label'=>'Descripci&oacute;n'))."</td></tr></table></center>";
+       ));
+	
+    echo $form->input('thumbnails',array('type'=>'file','label'=>'Subir Imagen del Producto'));
+    echo $form->input('publicar',array('type'=>'checkbox','label'=>'<span>Publicar</span>'));
+    echo $form->input('descripcion',array('label'=>'Descripci&oacute;n'));
    
     echo $form->input('usuario_id_usuario', array('type'=>'hidden','value'=>$session->read('Auth.User.id_usuario')));
-    echo $form->end('Crear Promocion');
+    echo "<br/>".$form->end('Crear Promocion')."<br/>";
 	
 	
 ?>
 
+</div>

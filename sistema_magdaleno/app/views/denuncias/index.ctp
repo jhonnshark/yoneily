@@ -1,9 +1,15 @@
-<center><img src="<?php echo $html->url('/',true)?>/img/reclamos.png" style="height:110px;" /><br/>
-<h2>Reclamos Registrados</h2>
+<center><img src="<?php echo $html->url('/',true)?>/img/reclamos.png" style="height:80px;" width='80' /><br/>
+
 </center>
 <?php //pr($reclamos); 
 if(!empty($reclamos)){ ?>
      <table style="margin-left:5px; " class="index" >
+     	<tr><td colspan="10" style="padding:0px; margin:0px;">
+        <center>
+         <div class="titulo_barra"><h2>Reclamos Registrados</h2></div>
+     </center>
+        </td>
+    </tr>
         <tr >
             <th><?php echo $this->Paginator->sort('ID', 'id_denuncia'); ?></th>
             <th><?php echo $this->Paginator->sort('Nombre y Apellido', 'nombre'); ?></th>
@@ -38,7 +44,7 @@ if(!empty($reclamos)){ ?>
 		</center></td>
 
          <td>
-			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/delete.png">', array('action' => 'delete', $reclamo['Denuncia']['id_denuncia']), array('escape' => false), 'Estas seguro de Eliminar?' )?></center>
+			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/delete.PNG">', array('action' => 'delete', $reclamo['Denuncia']['id_denuncia']), array('escape' => false), 'Estas seguro de Eliminar?' )?></center>
         </td>
         <td>
 			<center><?php echo $html->link('<img src="'.$html->url('/',true).'procesos/ver_lupa.png">', array('plugin' => 0,'action' => 'responder_denuncia' , $reclamo['Denuncia']['id_denuncia']), array('escape' => false))?></center>
