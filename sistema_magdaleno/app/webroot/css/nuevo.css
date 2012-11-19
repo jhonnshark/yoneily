@@ -1,14 +1,18 @@
-/*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-*/
-
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+article, aside, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
 body {
-	/*background-image: url(../images/Page-BgSimpleGradient.jpg);*/ /*color viejo #0F5B96*/
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	color: #A4E4F5;
+    background-color: #ececec;
+    font: 14px/18px "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
 	
 }
 
@@ -74,10 +78,12 @@ hr {
 /**
  * Header
  */
-#header { width: 770px; 
-background-color: #0000CC;
-background:url(../images/cintillo.png);
-padding: 15px 0px 15px 0px; margin: 0px 0px 0px 0px; height:70px; 
+#header {
+background:url(../images/asd-eliezerfot123.png)no-repeat;
+background-color: black;
+border:solid 1px #2b2b2b;
+border-radius: 0px 0px 15px 15px;
+padding: 15px 0px 15px 0px; margin: 0px 0px 0px 0px; height:70px; 	
 }
 #header .logo { font-weight: bold; }
 #header a { color: #ccc; text-decoration: none; }
@@ -673,9 +679,7 @@ div.video{
     background-image: url("../img/btnlog.png");
     background-repeat: no-repeat;
 }
-.cflogo_up{color:#759200; margin-top:0px;margin-left:-5px;margin-bottom:110px; width:770px;height:25px;}
-.cflogo_up a{color:black; font-family:Arial, Helvetica, sans-serif; text-decoration:none;font-size:16px;}
-.cflogo_up a:hover{color:#fff; font-family:Arial, Helvetica, sans-serif; text-decoration:underline;}
+
 #toolTipBox {  
 	display: none;  
 	padding: 5px 5px 5px 5px;  
@@ -701,7 +705,7 @@ table.compras{border: 1px solid #dfdfdf; background-color: #fff; clear: both; wi
 table.paginador{border: 1px solid #dfdfdf; background-color: #00CCCC; clear: both; width:770px; border-bottom: 3px solid #dfdfdf;}
 /*style="background-color: #00CCCC; width: 100%;height:25px;"*/
 .sesion{ 
-			/*background-color:#00CCCC;*/
+			/*background-color:#00CCCC;
 			background: #ffffff;
 			background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffff66), to(#ffffff));
 			background: -moz-linear-gradient(#ffff66, #ffffff);
@@ -714,9 +718,8 @@ table.paginador{border: 1px solid #dfdfdf; background-color: #00CCCC; clear: bot
 			-webkit-border-bottom-left-radius:14px; 
 			-webkit-border-top-left-radius:14px;
 			-moz-box-shadow:0 0 6px #ddd;
-			-webkit-box-shadow:0 0 6px #ddd;
-			width:100%;			
-			/*height:300px;			*/
+			-webkit-box-shadow:0 0 6px #ddd;*/
+			
 }
 
 table.mensajes { width: 770px; border: 1px solid #dfdfdf; background-color: #fff; clear: both; }

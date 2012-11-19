@@ -34,7 +34,9 @@
 		<link rel="shortcut icon" type="image/x-icon" href="<?php echo $html->url('/')?>favicon/logo.ico">
         <script src="<?php echo $html->url('/')?>js/jquery-1.4.2.min.js" type="text/javascript"></script>
 		<script src="<?php echo $html->url('/')?>js/jquery-ui-1.8.5.custom.min.js" type="text/javascript"></script>
-		
+		<link href="<?php echo $html->url('/')?>css/menu_navegacion.css" type="text/css" rel="stylesheet">
+		<script src="<?php echo $html->url('/')?>js/jquery-1.7.1.min.js" type="text/javascript"></script> 
+	    <script src="<?php echo $html->url('/')?>js/modernizr-2.0.6.min.js" type="text/javascript"></script> 
 		<script src="<?php echo $html->url('/')?>js/roundabout_shapes.js" type="text/javascript"></script>
 		<script src="<?php echo $html->url('/')?>js/scripts.js" type="text/javascript"></script>
 		<script src="<?php echo $html->url('/')?>js/ajax.js" type="text/javascript"></script>
@@ -186,29 +188,21 @@ $('document').ready(function(){
 <body>
 	<center>
 		<div class="sesion">
+			<div class="cflogo_up">
+				<div id="header" ></div>
+			</div>
+			
+			<div style="margin-top:-40px;margin-left:27%;"><?php echo $this->element("admin/navigation"); ?></div>
+				
+			
 					<?php if($this->Session->check('nombreusuario') && $this->Session->check('keyus')){?>
 							<div style="margin-top:0px;">
 							<b><font color="navy" face="arial" size="4">Hola: <?php echo $this->Session->read('nombreusuario'); ?></font></b>  | <a href="<?php echo $html->url('/')?>registers/miperfil/<?php echo $this->Session->read('keyus'); ?>"><font  face="arial" size="4"><b>Mi perfil</b></font></a> | <a href="<?php echo $html->url('/')?>ventas/miscompras"><font face="arial" size="4"><b>Compras</b></font></a> | <a href="<?php echo $html->url('/')?>ventas/mismensajes"><font face="arial" size="4"><b>Mensajes</b></font></a> | <a href="<?php echo $html->url('/')?>ventas/misreclamos"><font face="arial" size="4"><b>Reclamos</b></font></a> |  <a href="<?php echo $html->url('/')?>registers/salir"><font face="arial" size="4"><b>Cerrar Sesion</b></font></a> 
 							</div>
 							
-						<?php }else{?>
-							<div style="margin-top:0px;">
-								<font face="arial" size="4"><b><a id="reg" href="#">Registrate</a> | <a id="log" href="#">Entrar</a>  | <a href="http://localhost/git/yoneily/sistema_magdaleno/users/login" target="_blank">Administrador</a></b></font>
-							</div>
 						<?php }?>
 		
-		<center>
-		
-			<div class="cflogo_up">
-				
-				.
-				<div id="header" >
-				
-				</div>
-				
-			</div>
-			
-		</center>
+
 		</div>
 		
 	</center>
@@ -218,9 +212,7 @@ $('document').ready(function(){
 			
 			<div id="content" style="margin-top:-10px;">
 				<center>
-		<div id="menu" style="margin-top:-90px; margin-bottom:0px;"><?php echo $this->element("admin/navigation"); ?>
-			
-		</div>
+
 		
 		
 					<?php echo $content_for_layout; ?>
