@@ -12,7 +12,7 @@ if(!empty($preguntas)){ ?>
      	<tr><td colspan="10" style="padding:0px; margin:0px;">
         <center>
          <div class="titulo_barra"><h2>Preguntas Registradas</h2></div>
-     </center>
+     </center><br/>
         </td>
     </tr>
         <tr >

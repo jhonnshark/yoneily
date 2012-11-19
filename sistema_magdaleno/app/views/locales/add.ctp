@@ -71,7 +71,7 @@ $('document').ready(function(){
    echo "<tr><td colspan='4'><center><div class='titulo_barra'><h1>Registrar Locales</h1></div></center></td></tr>";
    echo"<tr>";
 echo "<tr><td colspan='4'><div id='mostrar'></div></td></tr>";
-   echo "<tr><td>".$form->input('rif', array('label' => 'Rif', 'size'=>20,'id'=>'rif','maxlength'=>10,'onblur'=>'con()'))."</td>";
+   echo "<tr><td>".$form->input('rif', array('label' => 'Rif', 'size'=>20,'id'=>'rif','placeholder' => 'J310969590', 'maxlength'=>10,'onblur'=>'con()'))."</td>";
 
    echo "<td>".$form->input('nombre_empresa', array('label' => 'Nombre Local','maxlength'=>255))."</td>";
    echo "<td>".$form->input('encargado_nombre', array('label' => 'Nombre Encargado','maxlength'=>255))."</td></tr>";

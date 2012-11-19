@@ -18,7 +18,7 @@ a {text-decoration: none; color: blue;}
     <tr><td colspan="9" style="padding:0px; margin:0px;">
         <center>
          <div class="titulo_barra"><h1>Usuario Creados</h1></div>
-     </center>
+     </center><br/>
         </td>
     </tr>
         <tr>

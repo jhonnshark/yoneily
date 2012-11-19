@@ -54,7 +54,7 @@ div.counter { margin-top: 10px; }
  * Tables
  */
  
-table { width: 900px; border: 1px solid #dfdfdf; background-color: #fff; clear: both; }
+table { width: 900px; border: 1px solid #fff; background-color: #fff; clear: both; }
 table tr th { padding: 5px; background-color: #e7e7e7; color: #464646; border-bottom: 0px; text-align: left; }
 table tr td { padding: 5px; border-bottom: 1px solid #dfdfdf; vertical-align: middle; }
 table tr td a { font-weight: normal; text-decoration: none; padding: 0px 5px 0px 0px; }
