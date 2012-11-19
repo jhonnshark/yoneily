@@ -53,6 +53,7 @@
 		
     });
 </script>
+
 <br><br>
 <div style="margin-left:100px;">
 <center><img src="<?php echo $html->url('/',true)?>/img/user.png" style="height:110px;" /><br/>
