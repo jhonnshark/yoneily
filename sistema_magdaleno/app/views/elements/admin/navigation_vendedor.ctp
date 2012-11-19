@@ -69,6 +69,10 @@
                 <li><?php echo $html->link(__('Agotados', true), array('plugin' => 0, 'controller' => 'pages', 'action' => 'agotados'), array('escape' => false)); ?></li>
             </ul>
         </li>
+        <li>
+            <a href="<?php echo $html->url('../users/logout'); ?>"><?php __('Cerrar Seción'); ?></a>
+
+        </li>
 
         <li style="left:50%;">
             <?php if($session->read('Auth.User.groups_idgrupos')==1){ ?>
