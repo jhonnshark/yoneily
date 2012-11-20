@@ -136,8 +136,8 @@ $('document').ready(function(){
                  var d = $('#dialog-modal').html('<iframe width="640" height="520" id="ifrm"></iframe>');
 				 //alert(d);
                 $("#dialog-modal>#ifrm").attr("src", url);
-                var $width = 681;
-                var $height = 600;
+                var $width = 660;
+                var $height = 570;
                 var horizontalPadding = 50;
                 var verticalPadding = 5;
                 $( "#dialog:ui-dialog2" ).dialog("destroy");
@@ -149,8 +149,8 @@ $('document').ready(function(){
                     modal: true
                 });
                 $('.centrar.ui-dialog').css({
-                    left:"19%",
-                    top:'8%'
+                    left:"25%",
+                    top:'2%'
                 });
         });
 
@@ -161,8 +161,8 @@ $('document').ready(function(){
                  var d = $('#dialog-modal').html('<iframe width="640" height="520" id="ifrm"></iframe>');
 				 //alert(d);
                 $("#dialog-modal>#ifrm").attr("src", url);
-                var $width = 681;
-                var $height = 600;
+                var $width = 660;
+                var $height = 570;
                 var horizontalPadding = 50;
                 var verticalPadding = 5;
                 $( "#dialog:ui-dialog2" ).dialog("destroy");
@@ -174,8 +174,8 @@ $('document').ready(function(){
                     modal: true
                 });
                 $('.centrar.ui-dialog').css({
-                    left:"19%",
-                    top:'8%'
+                    left:"25%",
+                    top:'2%'
                 });
         });
 
@@ -186,40 +186,66 @@ $('document').ready(function(){
 <body>
 	<center>
 		<div class="sesion">
-					<?php if($this->Session->check('nombreusuario') && $this->Session->check('keyus')){?>
-							<div style="margin-top:0px;">
-							<b><font color="navy" face="arial" size="4">Hola: <?php echo $this->Session->read('nombreusuario'); ?></font></b>  | <a href="<?php echo $html->url('/')?>registers/miperfil/<?php echo $this->Session->read('keyus'); ?>"><font  face="arial" size="4"><b>Mi perfil</b></font></a> | <a href="<?php echo $html->url('/')?>ventas/miscompras"><font face="arial" size="4"><b>Compras</b></font></a> | <a href="<?php echo $html->url('/')?>ventas/mismensajes"><font face="arial" size="4"><b>Mensajes</b></font></a> | <a href="<?php echo $html->url('/')?>ventas/misreclamos"><font face="arial" size="4"><b>Reclamos</b></font></a> |  <a href="<?php echo $html->url('/')?>registers/salir"><font face="arial" size="4"><b>Cerrar Sesion</b></font></a> 
-							</div>
-							
-						<?php }else{?>
-							<div style="margin-top:0px;">
-								<font face="arial" size="4"><b><a id="reg" href="#">Registrate</a> | <a id="log" href="#">Entrar</a></b></font>
-							</div>
+			<div class="cflogo_up">
+				<div id="header" ></div>
+			</div>
+			<div><?php echo $this->element("admin/navigation"); ?></div>
+
+			<?php if($this->Session->check('nombreusuario') && $this->Session->check('keyus')){?>
+			<style type="text/css">
+				ul.nav > li:hover {
+				    width:492px;
+				}
+
+				ul.nav > li a.ie6:hover {
+				    direction:ltr;
+				    width:492px;
+				}
+			</style>
+				<!--Menu secundario de usuarios -->
+				    <ul class="nav">
+				        <li>
+				        <!--[if lte IE 6]><a class="ie6" href="#url"><table><tr><td><![endif]-->
+				            <ul class="panel2">
+				            	<li><a href="<?php echo $html->url('/')?>registers/miperfil/<?php echo $this->Session->read('keyus'); ?>"><b>Mi Perfil</b><div class="perfil"></div></a></li>
+				                <li><a href="<?php echo $html->url('/')?>ventas/misreclamos"><b>Denuncias</b><div class="claim"></div></a></li>
+				                <li><a href="<?php echo $html->url('/')?>ventas/miscompras"><b>Comprar</b><div class="buy"></div></a></li>
+				                <li><a href="<?php echo $html->url('/')?>registers/salir" ><b>Salir</b><div class="close"></div></a></li>
+				            </ul>
+				        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+				        </li>
+				    </ul>
+				    <div style="clear:both"></div>			
+				<!--Fin del menu secundario -->
+
+					<?php }else {?>
+				<!--Menu secundario de usuarios -->
+				    <ul class="nav">
+				        <li>
+				        <!--[if lte IE 6]><a class="ie6" href="#url"><table><tr><td><![endif]-->
+				            <ul class="sub">
+				                <li><a id="reg" href="#"><b>Registrate</b><i></i></a></li>
+				                <li><a id="log" href="#"><b>Entrar</b><i></i></a></li>
+				                <li><a href="http://localhost/git/yoneily/sistema_magdaleno/users/login" target="_blank"><b>Administrador</b><i></i></a></li>
+				            </ul>
+				        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+				        </li>
+				    </ul>
+				    <div style="clear:both"></div>			
+				<!--Fin del menu secundario -->
+
 						<?php }?>
 		
-		<center>
-		
-			<div class="cflogo_up">
-				
-				.
-				<div id="header" >
-				
-				</div>
-				
-			</div>
-			
-		</center>
+
 		</div>
 		
 	</center>
-	<center>
 		
 		<div id="page">
 			
 			<div id="content" style="margin-top:-10px;">
 				<center>
-		<div id="menu" style="margin-top:10px; margin-bottom:40px;"><?php echo $this->element("admin/navigation"); ?></div>
-		<br>
+		
 					<?php echo $content_for_layout; ?>
 					<?php echo $this->Session->flash(); ?>
 					<?php echo $session->flash('auth');?>
@@ -228,16 +254,20 @@ $('document').ready(function(){
 		
 			
 		</div>
-		<center>
-			
-			<div id="footer">
-			<p><font color="black"><b>Siguenos en nuestras Redes Sociales</b></font><br>
-				<a href="https://www.facebook.com/ElPuntoArtesanalDeMagdaleno?ref=hl" target="_blank" alt="Facebook" style="margin-top:-20px;"><img src="<?php echo $html->url('/',true)?>/images/facebook.png" width="50" height="50" onmouseover="toolTip(' Facebook ',this)" /></a>
-				<a href="https://twitter.com/yoneylith" alt="Twitter" target="_blank" ><img src="<?php echo $html->url('/',true)?>/images/twitter.png" width="50" height="50" onmouseover="toolTip(' Twitter ',this)"/></a>
-			</p>
-			</div>
-			</center>
-	</center>
+		<footer>
+	            <div id="footer">
+	                <section class="footer_bottom">
+	                	<div class="inner">
+	                
+	                    	<div class="block_copyrights">
+	                        	<p>J.E.D &copy; 2012&nbsp;&nbsp;|&nbsp;&nbsp;Richar Pérez, Yoneylith Osorio</p>
+	                        </div>                        
+	                        <div class="clearboth"></div>
+	                    </div>
+	                </section>
+	            </div>
+	    </footer>
+	
 	<?php echo $this->element('sql_dump'); ?>
 	<div id="dialog-modal" title="Bienvenido" style="display:none;">
 		<p>Probando</p>
