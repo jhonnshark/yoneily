@@ -1,28 +1,8 @@
-<script type="text/javascript">
-	$('document').ready(function(){
-		$("#dialog-modal").show(function(){
-			$.ajax({
-                type: "POST",
-                url: "<?php echo $html->url('/',true)?>pages/info/",
-                success: function(data){
-				//alert(data);
-					if(data!=0){
-					
-						var url = '<?php echo $html->url('/',true)?>pages/info/';
-						var d = $('#dialog-modal').html('<iframe width="356" height="370" id="ifrm" ></iframe>');
-						$("#dialog-modal>#ifrm").attr("src", url);
-					}else{
-						$("#dialog-modal").hide();
-					}
-                }
-            });
-        });
-	});
-</script><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <center>
 		<div class="post1">
 		<table><tr><td>
-			<div style="margin-left:0px;">
+			<div style="margin-left:0px;z-index:1;">
 			
 			<h1><font color="navy">Contactanos</font></h1>
 			<fieldset class="contactos">
