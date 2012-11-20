@@ -23,7 +23,7 @@
 div#menu {
     height:41px;
     background:url(../images/menun/main-bg.png) repeat-x;
-    width: 100%;
+    width: 110%;
 }
 
 div#menu ul {
@@ -167,8 +167,7 @@ div#menu li.back .left {
 
 
 
-
-* { margin:0;
+/** { margin:0;
     padding:0;
 }
 body { background:rgb(74,81,85); }
@@ -178,6 +177,6 @@ div#copyright {
     color:#222;
     text-indent:30px;
     padding:40px 0 0 0;
-}
+}*/
 div#copyright a { color:#eee; }
 div#copyright a:hover { color:#222; }

@@ -10,7 +10,7 @@ table.index a{ text-decoration: none;}
      	<tr><td colspan="9" style="padding:0px; margin:0px;">
         <center>
          <div class="titulo_barra"><h2>Galerias Registradas</h2></div>
-     </center>
+     </center><br/>
         </td>
     </tr>
         <tr >

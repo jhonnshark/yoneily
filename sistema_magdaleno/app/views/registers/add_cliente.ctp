@@ -2,7 +2,7 @@
 label {margin-left: 25%;}
 a {text-decoration: none; color: blue;}
 table.index td{ border: 0px;}
-span{margin-left: -23%;}
+span{margin-left: -23%; padding-top: -50px;}
 </style>
 
 <script>
@@ -255,14 +255,14 @@ $('document').ready(function(){
 
    
     <table class="index">
-        <tr><td colspan="4">
+        <tr><td colspan="4"><center>
             <div class="titulo_barra">
-                <center><h1>Registrar Cuenta de Cliente</h1></center>
-            </div>
+                <h1>Registrar Cuenta de Cliente</h1>
+            </div></center><br/>
         </td></tr>
            <tr>
                 <td class="capti">Email</td>
-                <td ><font color="red"><?php echo $this->Form->input('correo', array("label" => false, "class" => "email","error" => false, "size"=>"20")); ?></font></td>
+                <td ><font color="red"><?php echo $this->Form->input('correo', array("label" => false, 'placeholder' => 'ejemplo@ejemplo.com',"class" => "email","error" => false, "size"=>"20")); ?></font></td>
            
               <td class="capti par" >Nombre y apellido</td>
                 <td ><font color="red"><?php echo $this->Form->input('nombreape', array("label" => false, "class" => "nomape","error" => false,'maxlength'=>'50')); ?></font></td>
@@ -279,7 +279,7 @@ $('document').ready(function(){
             
              <tr>
                 <td class="capti par" >Numero de Celular</td>
-                <td ><font color="red"><?php echo $this->Form->input('codi',array("class"=>"codigo","label"=>false,"div"=>false,"options" => array($cod),"empty"=>"----"));?><?php echo $this->Form->input('telefono', array("label" => false, "class" => "telefono","div"=>false,"error" => false,"maxlength"=>7,'size'=>'12')); ?></font></td>
+                <td ><font color="red"><?php echo $this->Form->input('codi',array("class"=>"codigo","label"=>false,"div"=>false,"options" => array($cod),"empty"=>"----"));?><?php echo $this->Form->input('telefono', array("id"=>"tlf","label" => false, "class" => "telefono","div"=>false,'placeholder' => '3465470', "error" => false,"maxlength"=>7,'size'=>'12')); ?></font></td>
             
             
                 <td class="capti">Pa&iacute;s</td>
@@ -319,7 +319,7 @@ $('document').ready(function(){
                             $attributes=array('legend'=>false,'class'=>'auto');
                            echo $form->radio('sexo',$options,$attributes);
 
-                            ?>
+                            ?><br/>
                 </td>
 
             </tr>

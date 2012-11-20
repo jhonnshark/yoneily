@@ -17,8 +17,8 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
@@ -35,7 +35,7 @@
 	?>
 	<script type="text/javascript" src="<?php echo $html->url('/')?>js/tooltic.js"></script>
     <?php echo $javascript->link(array('jquery-1.4.2.min','jquery-ui-1.8.5.custom.min','prueba','tiny_mce/tiny_mce.js','farbtastic','jquery.counter-1.0','jquery.floatingbox','jquery.validate','menu','funciones'));?>
-    <?php echo $html->css(array('main','jquery-ui-1.8.5.custom','nuevo_admin','menu'));?>
+    <?php echo $html->css(array('main','jquery-ui-1.8.5.custom','nuevo_admin','menu','form'));?>
 
     <!--Remover Mensaje No back link-->
 	<script type="text/javascript">

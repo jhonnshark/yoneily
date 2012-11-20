@@ -71,7 +71,7 @@ $('document').ready(function(){
      /* echo $form->input('groups_idgrupos',array('label'=>'Perfil:','options'=>array('1'=>'Administrador'
 	   )
        ))."</td>";*/
-	echo "".$form->input('groups_idgrupos', array('label' => false,'maxlength'=>30, 'type'=>'hidden', 'value'=>'1'))."";
+	echo "<br/><br/>".$form->input('groups_idgrupos', array('label' => false,'maxlength'=>30, 'type'=>'hidden', 'value'=>'1'))."";
     echo "".$form->input('username', array('label' => 'Nombre de Ususario','maxlength'=>30, 'size'=>'20','required' => 'required'))."";
     echo "".$form->input('perfil_usuario', array('label' => 'Nombre y Apellido','maxlength'=>255,'required' => 'required'))."";
     echo "".$form->input('email_usuario', array('label' => 'Correo','email' => 'email','required' => 'required'))."";
