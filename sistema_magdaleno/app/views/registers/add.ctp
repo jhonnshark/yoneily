@@ -239,8 +239,50 @@ $('document').ready(function(){
 
 
 </script>
+<style type="text/css">
+input {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    margin: 0;
+    outline: medium none;
+    padding: 4px;
+    width: 200px;
+}
+input:focus, textarea:focus {
+    border-color: #56B4EF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    color: #333333;
+    outline: 0 none;
+}
+input[type="file"] {
+    background-color: #FFFFFF;
+    box-shadow: none;
+}
+input[type="button"], input[type="reset"], input[type="submit"] {
+    height: auto;
+    width: auto;
+}
+
+form input[type="submit"] {
+    background: -moz-linear-gradient(center top , #79BBFF 5%, #378DE5 100%) repeat scroll 0 0 #79BBFF;
+    border: 1px solid #84BBF3;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 0 0 #BBDAF7;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 39px;
+    text-decoration: none;
+    text-shadow: 1px 1px 14px #528ECC;
+}
+a {color: #000;}
+</style>
 <center>
-<div style="background-color: #ececec; width: 435px; height: auto; float: left; margin-top: 20px; margin-left:130px;">
+<div style="background-color: #ececec; width: 600px; height: auto; float: left; border-radius: 7px; ">
   
     <?php
         echo $this->Form->create('Register', array('type'=>'file'));
@@ -373,7 +415,7 @@ $('document').ready(function(){
 
             <tr>
 
-                <td colspan="2" style="background-color: #ececec; text-align: center;"><?php echo $this->Form->submit('aceptar',array('class' => 'botonreg', 'title' => 'Custom Title')); ?></td>
+                <td colspan="2" style="background-color: #ececec; text-align: center;"><?php echo $this->Form->submit('Aceptar',array('class' => 'botonreg', 'title' => 'Custom Title')); ?></td>
             </tr>
 
             </table>

@@ -52,8 +52,8 @@ margin : -1px 0 0;
 }
 div#header1 div.wrap {
 margin-top:250px;
-height : 299px;
-background : url(../images/header-bg.png) no-repeat 50% 0;
+height : 289px;
+/*background : url(../images/header-bg.png) no-repeat 50% 0;*/
 }
 div#header1 div#slide-holder {
 z-index : 40;
