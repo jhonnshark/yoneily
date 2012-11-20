@@ -83,7 +83,7 @@
                 </div>
             <?php }?>
         </li>
-        <li style="left:80%;">
+        <li style="left:50%;">
             <?php if($session->read('Auth.User.groups_idgrupos')==2){ ?>
                 <div>
                     <font color="black">

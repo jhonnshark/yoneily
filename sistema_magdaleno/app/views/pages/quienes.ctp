@@ -1,10 +1,12 @@
-<br><br><br><br>
+<br/><br/>
 		<div >
 			<h1 class="title"><a href="#">Historia de Magdaleno. </a></h1>
 			
 			<div class="entry">
 				<p align="justify"><strong><font color="black">
-		<img src="<?php echo $html->url('/',true)?>img/Entrada_a_Magdaleno.jpg" style="width:200px;">
+
+		<img src="<?php echo $html->url('/',true)?>img/Entrada_a_Magdaleno.jpg" style="width:200px;"><br/>
+	
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esta poblaci&oacute;n se encuentra a tan solo 20 minutos de la Ciudad de Maracay, 
 Estado Aragua y a hora y media de Caracas, usted solo debe tomar la Autopista Regional del Centro bajar 
 en el peaje de Palo Negro, en la conocida redoma del Avi&oacute;n, siga a mano derecha e iniciara un recorrido 
