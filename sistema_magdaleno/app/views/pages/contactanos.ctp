@@ -5,7 +5,6 @@
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
-	margin-top: 230px;
 }
 
 </style>

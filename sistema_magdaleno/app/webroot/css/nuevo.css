@@ -221,7 +221,7 @@ div.counter { margin-top: 10px; }
 #page {
     width: 800px;
     margin-top: -320px;
-    margin-left: 20%;
+    margin: auto;
     /*position: relative;*/
     z-index: 1;
 
@@ -230,9 +230,10 @@ div.counter { margin-top: 10px; }
 #content { 
     margin-top:-100px;
     margin-bottom: 20px; 
-    min-height:500px;}
-#content_mapa {
-    float: left;
+    min-height:500px;
+}
+#content_map 
+2 %   float: left;
     width: 558px;
     padding: 0 0 0 25px;
     margin-bottom: 20px;

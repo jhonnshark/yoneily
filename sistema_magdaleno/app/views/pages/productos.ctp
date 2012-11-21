@@ -1,5 +1,4 @@
-<br><br><br><br>
-<div style="margin-top:0px;margin-left:0px;background-color:#ffffff;min-height:450px;">
+<div style="background-color:#ffffff;min-height:450px;">
 <!--.::GALERIA DE PRODUCTOS -->
 <?php if(!empty($galerias)){?>
 <center><br>

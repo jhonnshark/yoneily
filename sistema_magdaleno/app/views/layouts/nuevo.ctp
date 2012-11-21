@@ -252,8 +252,9 @@ $('document').ready(function(){
 					<?php echo $content_for_layout; ?>
 					<?php echo $this->Session->flash(); ?>
 					<?php echo $session->flash('auth');?>
+					</center>
 			</div>
-		</center>
+		
 		
 			
 		</div>

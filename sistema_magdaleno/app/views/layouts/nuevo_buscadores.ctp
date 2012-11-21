@@ -225,14 +225,15 @@ $('document').ready(function(){
 		
 		<div id="page">
 			
-			<div id="content" style="margin-top:-10px;">
+			<div id="content" style="">
 				<center>
 		
 					<?php echo $content_for_layout; ?>
 					<?php echo $this->Session->flash(); ?>
 					<?php echo $session->flash('auth');?>
+					</center>
 			</div>
-		</center>
+		
 		
 			
 		</div>

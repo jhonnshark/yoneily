@@ -2514,3 +2514,4 @@ Aco: editar galerias in [C:\xampp\htdocs\sistema_magdaleno\cake\libs\controller\
 2012-11-20 21:40:13 Warning: Warning (2): array_fill(): Number of elements must be positive in [/var/www/git/yoneily/sistema_magdaleno/app/vendors/tcpdf/tcpdf.php, line 18575]
 2012-11-20 21:40:13 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/git/yoneily/sistema_magdaleno/app/vendors/tcpdf/tcpdf.php, line 19816]
 2012-11-20 21:40:13 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/git/yoneily/sistema_magdaleno/app/vendors/tcpdf/tcpdf.php, line 19846]
+2012-11-20 22:39:26 Warning: Warning (2): Missing argument 5 for VentasController::add_promo() in [/var/www/git/yoneily/sistema_magdaleno/app/controllers/ventas_controller.php, line 112]
