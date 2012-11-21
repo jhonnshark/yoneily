@@ -1,3 +1,4 @@
+<div id="contenido">
 <div style="background-color:#ffffff;min-height:450px;">
 <!--.::PROMOCIONES DE PRODUCTOS -->
 <?php if(!empty($promociones)){?>
@@ -65,4 +66,5 @@
 </table>
 </center>
 <?php }?>
+</div>
 </div>

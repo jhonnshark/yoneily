@@ -257,7 +257,7 @@
 </script>
 	<?php //pr($galeria);?>
 	 <!-- #gallery -->
-	
+	<div id="contenido">
 	<div style="background-color:#ffffff; width:96%;">
 		<table align="right" style="margin-right:20px;"><tr><td><fieldset class="puntuacion" style="width:100%;" ><img src="<?php echo $html->url('/',true)?>files/locales/thumbnails/<?php echo $galeria[0]['Locale']['nombre_file'];?>" style="height:30px;" /><font color="red" size="5"> <?php echo $galeria[0]['Locale']['nombre_empresa'];?></font></fieldset></td>
 		<td align="center"><fieldset class="puntuacion" style="width:100%;"><font color="navy" size="5">Cant. Disponible:</font> <font color="black" size="5"><?php echo $galeria[0]['Gallery']['cantidad_existente'];?></font></fieldset></td>
@@ -471,6 +471,6 @@
 
 </div><!-- End demo -->
   <!-- /#gallery -->
-<div id="dialog-modal" title="Bienvenido" style="display:none;">
-		
+<div id="dialog-modal" title="Bienvenido" style="display:none;"></div>
+
 </div>

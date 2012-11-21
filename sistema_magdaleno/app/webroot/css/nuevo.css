@@ -219,14 +219,20 @@ div.counter { margin-top: 10px; }
 /* Page */
 
 #page {
-    width: 800px;
+    width: 80%;
     margin-top: -320px;
     margin: auto;
-    /*position: relative;*/
-    z-index: 1;
-
-        
+    z-index: 1;        
 }
+#contenido{
+    background-color: #ffffff;
+    z-index: 2;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width: 100%;
+}
+
 #content { 
     margin-top:-100px;
     margin-bottom: 20px; 

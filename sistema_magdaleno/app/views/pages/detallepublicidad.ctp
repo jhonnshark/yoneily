@@ -194,7 +194,8 @@
 </script>
 	<?php //pr($promos);?>
 	 <!-- #gallery -->
-	<div style="margin-top:30%;margin-left:;background-color:#ffffff; width:96%;">
+<div id="contenido">
+	<div style="background-color:#ffffff; width:96%;">
 		<table align="right" style="margin-right:20px;"><tr><td><fieldset class="puntuacion" style="width:100%;" ><img src="<?php echo $html->url('/',true)?>files/locales/thumbnails/<?php echo $promos[0]['Locale']['nombre_file'];?>" style="height:30px;" /><font color="red" size="5"> <?php echo $promos[0]['Locale']['nombre_empresa'];?></font></fieldset></td>
 		<td align="center"><fieldset class="puntuacion" style="width:100%;"><font color="navy" size="5">Cant. Disponible:</font> <font color="black" size="5"><?php echo $promos[0]['Promo']['cantidad_existente'];?></font></fieldset></td>
 		</tr></table>
@@ -399,7 +400,8 @@
 			</fieldset>
 	</div>
 	<?php }?>
-</div><br>
+</div><br/>
 
 </div><!-- End demo -->
   <!-- /#gallery -->
+</div>

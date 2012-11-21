@@ -1,3 +1,4 @@
+<div id="contenido">
 <div style="background-color:#ffffff;min-height:450px;">
 <!--.::GALERIA DE PRODUCTOS -->
 <?php if(!empty($galerias)){?>
@@ -81,4 +82,5 @@
 </center>
 <?php }?>
 
+</div>
 </div>

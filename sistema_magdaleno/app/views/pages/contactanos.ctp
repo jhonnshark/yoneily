@@ -1,15 +1,3 @@
-<style type="text/css">
-#contenido{
-	background-color: #ffffff;
-	z-index: 2;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
-}
-
-</style>
-
-
 <div id="contenido">
 	<img src="<?php echo $html->url('/',true)?>/images/contacto11.png" height="140" width="260" style="z-index:2;"/>
 
