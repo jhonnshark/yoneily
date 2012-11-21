@@ -33,6 +33,7 @@ header {
     background: url("../images/row1-top-tail.gif") repeat-x scroll left top transparent;
     height: 71px;
     width: 100%;
+    z-index: 2;
 }
 .main {
     font-size: 0.8125em;
@@ -219,7 +220,7 @@ div.counter { margin-top: 10px; }
     width: 800px;
     margin-top: -320px;
     margin-left: 20%;
-    position: relative;
+    /*position: relative;*/
     z-index: 1;
 
         
@@ -1086,6 +1087,4 @@ background-color:#e3e3e3;
 text-shadow:1px 1px 1px #fff;
 }
 
-#vertales {
-    color: #000000;
-}
+
