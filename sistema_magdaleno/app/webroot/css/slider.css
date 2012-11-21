@@ -67,6 +67,7 @@ width : 755px;
 height : 280px;
 overflow : hidden;
 position : absolute;
+border:solid 4px #fff;
 -webkit-border-radius: 9px;
 -moz-border-radius: 9px;
 border-radius: 9px;
