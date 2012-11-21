@@ -6,7 +6,7 @@
 
 	 <!-- #gallery -->
 	<?php //if((!empty($promos[0]['Promo']['thumbnails'])) and (!empty($promos[1]['Promo']['thumbnails'])) and (!empty($promos[2]['Promo']['thumbnails'])) and (!empty($promos[3]['Promo']['thumbnails'])) and (!empty($promos[4]['Promo']['thumbnails']))){?>
-  <div id="contenido">
+  <div id="">
 
     <div id="header1" ><div class="wrap" >
    <div id="slide-holder" >
