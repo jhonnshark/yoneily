@@ -15,7 +15,7 @@ a {text-decoration: none;}
 		<div align="center">
 		<?php
 		     echo $form->create('User', array('action' => 'edit'));
-		     echo $form->input('groups_idgrupos', array('options'=>array($groups),'label'=>'Perfil','empty'=>'Elegir opción'));
+		    // echo $form->input('groups_idgrupos', array('options'=>array($groups),'label'=>'Perfil','empty'=>'Elegir opción'));
 		     echo $form->input('username',array('label'=>'Nombre de Usuario'));
 		     echo $form->input('email_usuario',array('label' => 'Correo'));
 		     echo $form->input('id_usuario', array('type'=>'hidden'))."<br/>";

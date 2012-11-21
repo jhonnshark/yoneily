@@ -26,7 +26,7 @@ input {
     padding: 4px;
     width: 275px;
 }
-select #codigo {
+select#codigo {
     background-color: #FFFFFF;
     border: 1px solid #CCCCCC;
     border-radius: 3px 3px 3px 3px;
@@ -38,7 +38,7 @@ select #codigo {
     font-size: 12px;
 }
 
-select , select #tlf {
+select , select#tlf {
     background-color: #FFFFFF;
     border: 1px solid #CCCCCC;
     border-radius: 3px 3px 3px 3px;
