@@ -102,7 +102,7 @@ echo "<tr><td colspan='4'><div id='mostrar'></div></td></tr>";
    <?php
    echo "</center></td></tr>";
    echo "<tr>";
-   echo "<td class=formpequeno>".$form->input('banco_cuenta_uno',array('label'=>'Banco de Cuenta Uno:','options'=>array(
+   echo "<td class=formpequeno>".$form->input('banco_cuenta_uno',array('id'=>'codigo','label'=>'Banco de Cuenta Uno:','options'=>array(
       'Mercantil'=>'Banco Mercantil',
 	  'Venezuela'=>'Banco de Venezuela',
 	  'Banesco'=>'Banco Banesco',
@@ -111,7 +111,7 @@ echo "<tr><td colspan='4'><div id='mostrar'></div></td></tr>";
 	  'Caribe'=>'Banco Caribe'
 	   ),'empty'=>'Seleccione'
        ))."</td>"; 
-   echo "<td class=formpequeno>".$form->input('banco_cuenta_dos',array('label'=>'Banco de Cuenta Dos:','options'=>array(
+   echo "<td class=formpequeno>".$form->input('banco_cuenta_dos',array('id'=>'codigo','label'=>'Banco de Cuenta Dos:','options'=>array(
       'Mercantil'=>'Banco Mercantil',
 	  'Venezuela'=>'Banco de Venezuela',
 	  'Banesco'=>'Banco Banesco',
@@ -120,12 +120,12 @@ echo "<tr><td colspan='4'><div id='mostrar'></div></td></tr>";
 	  'Caribe'=>'Banco Caribe'
 	   ),'empty'=>'Seleccione'
        ))."</td>"; 
-	   echo "<td class=formpequeno>".$form->input('tarjeta',array('label'=>'Punto de Venta:','options'=>array(
+	   echo "<td class=formpequeno>".$form->input('tarjeta',array('id'=>'codigo','label'=>'Punto de Venta:','options'=>array(
       '1'=>'Si',
 	  '0'=>'No'
 	   ),'empty'=>'Seleccione'
        ))."</td>"; 
-	   echo "<td class=formpequeno>".$form->input('efectivo',array('label'=>'Pago en Efectivo:','options'=>array(
+	   echo "<td class=formpequeno>".$form->input('efectivo',array('id'=>'codigo','label'=>'Pago en Efectivo:','options'=>array(
       '1'=>'Si',
 	  '0'=>'No'
 	   ),'empty'=>'Seleccione'
@@ -137,7 +137,7 @@ echo "<tr><td colspan='4'><div id='mostrar'></div></td></tr>";
    <?php
    echo "</center></td></tr>";
     echo "<tr>";
-    echo "<td class=formpequeno>".$form->input('envio_uno',array('label'=>'Medio Envio Uno:','options'=>array(
+    echo "<td class=formpequeno>".$form->input('envio_uno',array('id'=>'codigo','label'=>'Medio Envio Uno:','options'=>array(
       'mrw'=>'MRW',
 	  'zoom'=>'Zoom',
 	  'domesa'=>'Domesa',
@@ -145,7 +145,7 @@ echo "<tr><td colspan='4'><div id='mostrar'></div></td></tr>";
 	  '0'=>'Ninguno'
 	   ),'empty'=>'Seleccione Opcion'
     ))."</td>"; 
-    echo "<td class=formpequeno>".$form->input('envio_dos',array('label'=>'Medio Envio Dos:','options'=>array(
+    echo "<td class=formpequeno>".$form->input('envio_dos',array('id'=>'codigo','label'=>'Medio Envio Dos:','options'=>array(
       'mrw'=>'MRW',
 	  'zoom'=>'Zoom',
 	  'domesa'=>'Domesa',
@@ -153,7 +153,7 @@ echo "<tr><td colspan='4'><div id='mostrar'></div></td></tr>";
 	  '0'=>'Ninguno'
 	   ),'empty'=>'Seleccione Opcion'
     ))."</td>";
-	echo "<td class=formpequeno>".$form->input('envio_tres',array('label'=>'Medio Envio Tres:','options'=>array(
+	echo "<td class=formpequeno>".$form->input('envio_tres',array('id'=>'codigo','label'=>'Medio Envio Tres:','options'=>array(
       'mrw'=>'MRW',
 	  'zoom'=>'Zoom',
 	  'domesa'=>'Domesa',

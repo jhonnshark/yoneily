@@ -262,7 +262,7 @@
 		<table align="right" style="margin-right:20px;"><tr><td><fieldset class="puntuacion" style="width:100%;" ><img src="<?php echo $html->url('/',true)?>files/locales/thumbnails/<?php echo $galeria[0]['Locale']['nombre_file'];?>" style="height:30px;" /><font color="red" size="5"> <?php echo $galeria[0]['Locale']['nombre_empresa'];?></font></fieldset></td>
 		<td align="center"><fieldset class="puntuacion" style="width:100%;"><font color="navy" size="5">Cant. Disponible:</font> <font color="black" size="5"><?php echo $galeria[0]['Gallery']['cantidad_existente'];?></font></fieldset></td>
 		</tr></table>
-		<br><br><br /><br /><center><h2><font color="black"><?php echo $galeria[0]['Gallery']['texto_galeria'];?></font></h2>
+		<br><br><br /><br /><center><h2><font color="black"><?php echo $galeria[0]['Gallery']['texto_galeria'];?></font></h2><br/>
 		<img style="border:4px solid grey;width:342px;height:280px;" src="<?php echo $html->url('/',true)?>files/galeria/normal/<?php echo $galeria[0]['Gallery']['thumbnails'];?>"  /></center>
 		<br/>
 		<center>

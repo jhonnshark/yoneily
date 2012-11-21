@@ -23,16 +23,16 @@
                  var url = '<?php echo $html->url('/',true)?>users/add_vendedor/';
 				 //alert('entro aqui');
 				 //alert(url);
-                 var d = $('#dialog-modal').html('<iframe width="460" height="520" id="ifrm"></iframe>');
+                 var d = $('#dialog-modal').html('<iframe width="465" height="435" id="ifrm"></iframe>');
 				 //alert(d);
                 $("#dialog-modal>#ifrm").attr("src", url);
-                var $width = 501;
-                var $height = 500;
+                var $width = 500;
+                var $height = 490;
                 var horizontalPadding = 50;
                 var verticalPadding = 5;
                 $( "#dialog:ui-dialog2" ).dialog("destroy");
 				d.dialog({
-                    dialogClass: "centrar",
+                    dialogClass: "center",
                     autoOpen: true,
                     width: $width,
                     height: $height,
