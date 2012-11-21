@@ -225,12 +225,9 @@ div.counter { margin-top: 10px; }
     z-index: 1;        
 }
 #contenido{
-    background-color: #ffffff;
-    z-index: 2;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    border-radius: 7px;
-    width: 100%;
+
+
+    
 }
 
 #content { 
@@ -1222,10 +1219,14 @@ form input[type=submit]:hover {
     position:relative;
     top:1px;
 }
-#contenido{
+#contenido2{
     background-color: #ffffff;
     z-index: 1;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
+<<<<<<< HEAD
+=======
+    width: 750px;
+>>>>>>> 729fddd977329941438823eed9a76980e8b04fc0
 }

@@ -1,4 +1,4 @@
-<div id="contenido">
+<div id="contenido2">
 	<img src="<?php echo $html->url('/',true)?>/images/contacto11.png" height="140" width="260" style="z-index:2;"/>
 
 	<table style="margin-left:30px;">
