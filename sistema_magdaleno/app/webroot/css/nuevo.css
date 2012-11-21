@@ -17,12 +17,14 @@ html {
     width: 100%;
 }
 body {
-    
-    background: url(../images/bg.jpg)no-repeat;
-    color: #262626;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 100%;
-    min-width: 980px;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/bg.jpg");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }		
 header {
     position: relative;
