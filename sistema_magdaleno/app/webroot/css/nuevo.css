@@ -737,13 +737,16 @@ div.video{
 fieldset.puntuacion{ 
     border:solid 1px #ffffff;
     background: #0D82B5;
-    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#ccff99));
-    background: -moz-linear-gradient(#ffffff, #ccff99);
-    background: linear-gradient(#ffffff, #ccff99);
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#d2cfcf));
+    background: -moz-linear-gradient(#ffffff, #d2cfcf);
+    background: linear-gradient(#ffffff, #d2cfcf);
     height:35px;
     padding-left:10px;
     padding-right:10px;
+    width: 90%;
 }
+fieldset.puntuacion td{border-left: 1px solid grey; padding-left: 40px; padding-right: 40px;}
+
 table.compras{border: 1px solid #dfdfdf; background-color: #fff; clear: both; width:770px; border-bottom: 3px solid #dfdfdf;}
 table.paginador{border: 1px solid #dfdfdf; background-color: #00CCCC; clear: both; width:770px; border-bottom: 3px solid #dfdfdf;}
 /*style="background-color: #00CCCC; width: 100%;height:25px;"*/
