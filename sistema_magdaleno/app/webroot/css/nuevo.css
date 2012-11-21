@@ -746,7 +746,7 @@ fieldset.puntuacion{
     padding-right:10px;
     width: 90%;
 }
-fieldset.puntuacion td{border-left: 1px solid grey; padding-left: 40px; padding-right: 40px;}
+fieldset.puntuacion td{padding-left: 40px; padding-right: 40px;}
 
 table.compras{border: 1px solid #dfdfdf; background-color: #fff; clear: both; width:770px; border-bottom: 3px solid #dfdfdf;}
 table.paginador{border: 1px solid #dfdfdf; background-color: #00CCCC; clear: both; width:770px; border-bottom: 3px solid #dfdfdf;}

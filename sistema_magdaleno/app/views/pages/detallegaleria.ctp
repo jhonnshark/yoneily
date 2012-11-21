@@ -132,7 +132,7 @@
                 });
 			});
 			$("#carrito").click(function(){
-				var datos = new Object();
+				/*var datos = new Object();
 				datos.usuario = $("#usuario").val();
 				datos.local = $("#local").val();
 				datos.cuantos = $("#cuantos").val();
@@ -158,8 +158,11 @@
                 $('.centrar.ui-dialog').css({
                     left:"19%",
                     top:'8%'
-                });
+                });*/
+				location.href="../../productos/";
 			});
+
+
 			$("#preguntas").show(function(){
 				var datos = new Object();
 				datos.producto = $("#producto").val();
@@ -254,7 +257,7 @@
 </script>
 	<?php //pr($galeria);?>
 	 <!-- #gallery -->
-	<div style="margin-top:40%;margin-left:;background-color:#ffffff; width:96%;">
+	<div style="margin-top:30%;margin-left:;background-color:#ffffff; width:96%;">
 		<table align="right" style="margin-right:20px;"><tr><td><fieldset class="puntuacion" style="width:100%;" ><img src="<?php echo $html->url('/',true)?>files/locales/thumbnails/<?php echo $galeria[0]['Locale']['nombre_file'];?>" style="height:30px;" /><font color="red" size="5"> <?php echo $galeria[0]['Locale']['nombre_empresa'];?></font></fieldset></td>
 		<td align="center"><fieldset class="puntuacion" style="width:100%;"><font color="navy" size="5">Cant. Disponible:</font> <font color="black" size="5"><?php echo $galeria[0]['Gallery']['cantidad_existente'];?></font></fieldset></td>
 		</tr></table>
@@ -267,25 +270,25 @@
 				<td align="center"><font color="red" size="5"> <?php echo $galeria[0]['Gallery']['precio'].'</font><font color="black" size="5"> BsF.';?></font></td>
 				<!--INICIO DE REPUTACION -->
 				<?php if($galeria[0]['Gallery']['prod_vendidos'] <=5){;?>
-				<td align="center"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL0.png" style="height:30px;" /></font></td>
+				<td align="center"  style="border-left: 1px solid grey;"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL0.png" style="height:30px;" /></font></td>
 				<?php }?>
 				<?php if($galeria[0]['Gallery']['prod_vendidos'] >5 and $galeria[0]['Gallery']['prod_vendidos'] <=10){;?>
-				<td align="center"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL1.png" style="height:30px;" /></font></td>
+				<td align="center"  style="border-left: 1px solid grey;"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL1.png" style="height:30px;" /></font></td>
 				<?php }?>
 				<?php if($galeria[0]['Gallery']['prod_vendidos'] >10 and $galeria[0]['Gallery']['prod_vendidos'] <=15){;?>
-				<td align="center"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL2.png" style="height:30px;" /></font></td>
+				<td align="center"  style="border-left: 1px solid grey;"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL2.png" style="height:30px;" /></font></td>
 				<?php }?>
 				<?php if($galeria[0]['Gallery']['prod_vendidos'] >15 and $galeria[0]['Gallery']['prod_vendidos'] <=25){;?>
-				<td align="center"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL3.png" style="height:30px;" /></font></td>
+				<td align="center"  style="border-left: 1px solid grey;"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL3.png" style="height:30px;" /></font></td>
 				<?php }?>
 				<?php if($galeria[0]['Gallery']['prod_vendidos'] >25 and $galeria[0]['Gallery']['prod_vendidos'] <=45){;?>
-				<td align="center"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL4.png" style="height:30px;" /></font></td>
+				<td align="center"  style="border-left: 1px solid grey;"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL4.png" style="height:30px;" /></font></td>
 				<?php }?>
 				<?php if($galeria[0]['Gallery']['prod_vendidos'] >45){;?>
-				<td align="center"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL5.png" style="height:30px;" /></font></td>
+				<td align="center"  style="border-left: 1px solid grey;"><font color="navy" size="5"> Reputaci&oacute;n: <img src="<?php echo $html->url('/',true)?>puntuacion/SIGNAL5.png" style="height:30px;" /></font></td>
 				<?php }?>
 				<!--FIN DE REPUTACION -->
-				<td align="center"><font color="navy" size="5"> Vendidos:</font> <font color="black" size="5"><?php echo $galeria[0]['Gallery']['prod_vendidos'];?></font></td>
+				<td align="center"  style="border-left: 1px solid grey;"><font color="navy" size="5"> Vendidos:</font> <font color="black" size="5"><?php echo $galeria[0]['Gallery']['prod_vendidos'];?></font></td>
 			</tr></table>
 			</fieldset>
 			<span id="toolTipBox"> </span>
@@ -312,7 +315,7 @@
 					<a id="carrito" class="carrito" href="#" style="display:none;"><img src="<?php echo $html->url('/',true)?>img/carrito.png" style="height:40px;" onmouseover="toolTip('Haz click para ir a Carrito de Compras',this)" /></a>
 				</td>
 				<td>
-					<div class="excel"  align="center" ><a><img src="<?php echo $html->url('/',true)?>/img/reporte_general_venta.png" style="height:40px;"></a></div><br/>	
+					<div class="excel"  align="center" ><a><img src="<?php echo $html->url('/',true)?>/img/reporte_general_venta.png" style="height:40px;" onmouseover="toolTip('Reporte de Compra',this)"></a></div><br/>	
 				</td>
 			</tr></table>
 			
