@@ -10,7 +10,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => '0000',
+		'password' => '1234',
 		'database' => 'magdaleno',
 		'prefix' => '',
                 'encoding' => 'utf-8',
