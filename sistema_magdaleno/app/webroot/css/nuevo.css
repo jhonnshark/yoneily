@@ -671,11 +671,8 @@ fieldset.contactos{
             border-radius: 12px;
             -moz-box-shadow:0 0 6px #ddd;
             -webkit-box-shadow:0 0 6px #ddd;
-            width:600px;    
-            margin-bottom:5px;
-            margin-top:5px;
-            text-align: center;
-            /*height:300px;         */
+            width:600px;
+            text-align: right;
 }
 
 div.fotos{ 
@@ -1087,16 +1084,103 @@ text-shadow:1px 1px 1px #fff;
 background-color:#e3e3e3;
 text-shadow:1px 1px 1px #fff;
 }
+/* Campos Input */
+label, input, textarea, select, button {
+    font: 13px/20px "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+input{
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    margin: 0;
+    outline: medium none;
+    padding: 4px;
+    width: 275px;
+}
+select{
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    margin: 0;
+    outline: medium none;
+    padding: 4px;
+    width: 130px;
+}
+textarea {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    margin: 0;
+    outline: medium none;
+    padding: 4px;
+}
 
-
-label { margin: 0px 0px 0px 3px; font-size: 14px; color: #464646; font-weight: bold; text-align: left;  }
-.text label,
-.textarea label,
-.select label,
-.file label,
-.datetime label,
-.password label { display: block; 
-
+input[type="checkbox"], input[type="radio"] {
+    background-color: transparent;
+    border: medium none;
+    cursor: pointer;
+    height: auto;
+    line-height: normal;
+    margin: 3px 0;
+    padding: 0;
+    width: auto;
+}
+input[type="file"] {
+    background-color: #FFFFFF;
+    box-shadow: none;
+}
+input[type="button"], input[type="reset"], input[type="submit"] {
+    height: auto;
+    width: auto;
+}
+select, input[type="file"] {
+    height: 30px;
+    line-height: 30px;
+}
+select[multiple] {
+    background-color: #FFFFFF;
+    height: inherit;
+}
+.inline-form {
+    float: left;
+    margin: 10px 0;
+    width: 100%;
+}
+textarea {
+    height: auto;
+    width: 275px;
+}
+.radio, .checkbox {
+    cursor: pointer;
+    line-height: 18px;
+    margin-bottom: 5px;
+    padding-left: 18px;
+    position: relative;
+}
+.radio > ul, .checkbox > ul {
+    margin-top: 5px;
+}
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+input, textarea {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 1px 0 rgba(255, 255, 255, 0.075);
+    transition: background 0.2s linear 0s;
+}
+input:focus, textarea:focus {
+    border-color: #56B4EF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    color: #333333;
+    outline: 0 none;
+}
+input[type="file"]:focus, input[type="checkbox"]:focus, select:focus {
+    box-shadow: none;
+    outline: 1px dotted #666666;
 }
 form input[type=submit] { 
     -moz-box-shadow: 0px 1px 0px 0px #bbdaf7;
@@ -1128,11 +1212,3 @@ form input[type=submit]:hover {
     position:relative;
     top:1px;
 }
-form input[type=text],
-form input[type=password],
-form input[type=file],
-form textarea { padding: 5px; font-size: 17px;  border: 1px solid #ccc; }
-form select { padding: 3px; font-size: 20px; size:60px; margin-bottom: 10px; background-color: #fff; border: 1px solid #ccc; text-align: left;}
-form input:focus,
-form select:focus,
-form textarea:focus { border: 1px solid #999; }
