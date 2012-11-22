@@ -1,5 +1,5 @@
-<div id="contenido">
-<div style="background-color:#ffffff;min-height:450px;">
+<div id="promocion">
+<div style="">
 <!--.::GALERIA DE PRODUCTOS -->
 <?php if(!empty($galerias)){?>
 <center><br>

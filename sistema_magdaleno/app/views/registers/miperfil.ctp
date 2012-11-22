@@ -57,13 +57,14 @@
  </script>
 		
 	<center>
-	<div style="margin-top:90px;margin-left:0px;background-color:#ffffff; min-height:600px;">
+	<div id="perfil">
 	<div style="background-color: #ffffff; width: 485px; height: auto; float: left; margin-top: 20px; margin-left:160px;">
   
     <?php
         echo $this->Form->create('Register');//,array('controller'=>'registers','action'=>'actualizardatos')
 	?>
-    <h1 ><font color="navy">Mi Perfil</font></h1>
+    <img src="<?php echo $html->url('/',true)?>/images/start.png" style="height:190px;" /><h1 >Mi Perfil</h1>
+
     <table border="0"  style="background-color: #ffffff;width:100%;">
            <tr>
                 <td class="capti">Email</td>

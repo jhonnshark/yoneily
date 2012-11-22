@@ -55,7 +55,7 @@ height : 289px;
 /*background : url(../images/header-bg.png) no-repeat 50% 0;*/
 }
 div#header1 div#slide-holder {
-z-index : 40;
+z-index : 1;
 width : 659px;
 height : 299px;
 position : absolute;
