@@ -1,7 +1,7 @@
 <style type="text/css">
 label {margin-left: 25%;}
-span{margin-left: -25%;}
-#buscar_seleccion{width: 250px;}
+#pub{margin-left: 38%;}
+#buscar_seleccion{width: 290px; font-size: 15px;}
 </style>
 <script type="text/javascript">
     $('document').ready(function(){
@@ -49,14 +49,14 @@ span{margin-left: -25%;}
     }else{
 		echo $form->input('locale_id_local',array('label'=>'Nombre del Local','id'=>'buscar_local'));
 	}
-   echo $form->input('garantia',array('label'=>'Garantia:','id'=>'buscar_seleccion','options'=>array(
+   echo $form->input('garantia',array('id'=>'codigo','label'=>'Garantia:','id'=>'buscar_seleccion','options'=>array(
       'Si'=>'Si',
 	  'No'=>'No'
 	   ),'empty'=>'Seleccione'
        ))."";
 	
-   echo $form->input('thumbnails',array('type'=>'file','label'=>'Imagen del Producto'));
-   echo $form->input('publicar',array('type'=>'checkbox','label'=>'<span>Publicar</span>'));
+   echo $form->input('thumbnails',array('type'=>'file','label'=>'Imagen del Producto'))."<br/>";
+   echo $form->input('publicar',array('type'=>'checkbox','id'=>'pub','label'=>'Publicar'));
    echo $form->input('descripcion',array('label'=>'Descripci&oacute;n'));
    
    echo $form->input('usuario_id_usuario', array('type'=>'hidden','value'=>$session->read('Auth.User.id_usuario')));

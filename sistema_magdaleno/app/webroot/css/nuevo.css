@@ -1226,11 +1226,14 @@ form input[type=submit]:hover {
 }
 #contenido2{
     background-color: #ffffff;
-    z-index: 2;
+    z-index: 1;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
+<<<<<<< HEAD
+=======
     width: 750px;
+>>>>>>> 729fddd977329941438823eed9a76980e8b04fc0
 }
 #promocion{
     background-color: #ffffff;

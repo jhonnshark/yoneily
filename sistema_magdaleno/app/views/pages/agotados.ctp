@@ -38,7 +38,7 @@ if(!empty($galerias)){ ?>
 		?>
 		<td><img src="<?php echo $html->url('/',true)?>/img/Green_tick.png" style="height:20px;" /></td>
 		<?php }else{?>
-		<td><img src="<?php echo $html->url('/',true)?>/procesos/alerta.png" style="height:20px;" /></td>
+		<td><img src="<?php echo $html->url('/',true)?>/procesos/alerta.PNG" style="height:20px;" /></td>
 		<?php }?>
         </tr>
      <?php endforeach; ?>
@@ -52,7 +52,7 @@ if(!empty($galerias)){ ?>
 <?php echo $this->Paginator->counter(); ?>
  </table>
  <?php }else{
-	echo "<center><h2 style='color:#fff;'>No existen productos agotados</h2></center>";
+	echo "<center><h2 style='color: black;'>No existen productos agotados</h2></center>";
 }
 ?>
 
@@ -96,7 +96,7 @@ if(!empty($promociones)){ ?>
 		?>
 		<td><img src="<?php echo $html->url('/',true)?>/img/Green_tick.png" style="height:20px;" /></td>
 		<?php }else{?>
-		<td><img src="<?php echo $html->url('/',true)?>/procesos/alerta.png" style="height:20px;" /></td>
+		<td><img src="<?php echo $html->url('/',true)?>/procesos/alerta.PNG" style="height:20px;" /></td>
 		<?php }?>
         </tr>
      <?php endforeach; ?>
@@ -110,6 +110,6 @@ if(!empty($promociones)){ ?>
 <?php echo $this->Paginator->counter(); ?>
  </table>
  <?php }else{
-	echo "<center><h2 style='color:#fff;'>No existen promociones agotadas</h2></center>";
+	echo "<center><h2 style='color:black;'>No existen promociones agotadas</h2></center>";
 }
 ?>

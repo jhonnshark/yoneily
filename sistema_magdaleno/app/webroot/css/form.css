@@ -35,9 +35,10 @@ select#codigo {
     outline: medium none;
     padding: 4px;
     width: 275px;
+    font-size: 12px;
 }
 
-select {
+select , select#tlf {
     background-color: #FFFFFF;
     border: 1px solid #CCCCCC;
     border-radius: 3px 3px 3px 3px;
@@ -46,6 +47,7 @@ select {
     outline: medium none;
     padding: 4px;
     width: 70px;
+    font-size: 15px;
 }
 textarea{
 background-color: #FFFFFF;

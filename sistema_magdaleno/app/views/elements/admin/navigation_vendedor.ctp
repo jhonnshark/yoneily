@@ -46,7 +46,7 @@
             <a href="#" class="parent"><?php __('Contactos'); ?></a>
             <ul>
                 <li><?php echo $html->link(__('Preguntas', true), array('plugin' => 0, 'controller' => 'pages', 'action' => 'index_preguntas'), array('escape' => false)); ?></li>
-                <li><?php echo $html->link(__('Reclamos', true), array('plugin' => 0, 'controller' => 'denuncias', 'action' => 'index'), array('escape' => false)); ?></li>
+                <!--<li><?php echo $html->link(__('Reclamos', true), array('plugin' => 0, 'controller' => 'denuncias', 'action' => 'index'), array('escape' => false)); ?></li>-->
             </ul>
         </li>
 

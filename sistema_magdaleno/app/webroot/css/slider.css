@@ -53,6 +53,7 @@ margin : -1px 0 0;
 div#header1 div.wrap {
 height : 289px;
 /*background : url(../images/header-bg.png) no-repeat 50% 0;*/
+z-index: 1;
 }
 div#header1 div#slide-holder {
 z-index : 1;

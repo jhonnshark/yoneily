@@ -279,7 +279,7 @@ $('document').ready(function(){
             
              <tr>
                 <td class="capti par" >Numero de Celular</td>
-                <td ><font color="red"><?php echo $this->Form->input('codi',array("class"=>"codigo","label"=>false,"div"=>false,"options" => array($cod),"empty"=>"----"));?><?php echo $this->Form->input('telefono', array("id"=>"tlf","label" => false, "class" => "telefono","div"=>false,'placeholder' => '3465470', "error" => false,"maxlength"=>7,'size'=>'12')); ?></font></td>
+                <td ><font color="red"><?php echo $this->Form->input('codi',array("id"=>"tlf","label"=>false,"div"=>false,"options" => array($cod),"empty"=>"----"));?><?php echo $this->Form->input('telefono', array("id"=>"tlf","label" => false, "class" => "telefono","div"=>false,'placeholder' => '3465470', "error" => false,"maxlength"=>7,'size'=>'12')); ?></font></td>
             
             
                 <td class="capti">Pa&iacute;s</td>
@@ -304,7 +304,7 @@ $('document').ready(function(){
                 <td class="capti">Fecha Nacimiento</td>
                 <td>
             <?php $fecha = date('Y')?>
-                        <?php echo $this->Form->input('fechanac',array('label'=>false,'minYear'=>'1940','maxYear'=>$fecha,'dateFormat'=>'DMY','monthNames'=>array('Seleccione','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'))); ?>
+                        <?php echo $this->Form->input('fechanac',array('id'=>'tlf','label'=>false,'minYear'=>'1940','maxYear'=>$fecha,'dateFormat'=>'DMY','monthNames'=>array('Seleccione','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'))); ?>
                         
 
                </td>
