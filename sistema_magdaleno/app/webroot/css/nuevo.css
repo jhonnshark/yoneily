@@ -25,7 +25,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}		
+}       
 header {
     position: relative;
     width: 100%;
@@ -224,16 +224,16 @@ div.counter { margin-top: 10px; }
     margin: auto;
     z-index: 1;        
 }
- #contenido{
+#contenido{
   background-color: #ffffff;
   z-index: 2;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
   width: 100%;
-   
- }
 
+    
+}
 
 #content { 
     margin-top:-100px;
@@ -892,8 +892,8 @@ ul.sub li a:hover i {
 ul.panel2 {
     list-style:none;
     height:120px;
-    width:492px;
-    background:url(../images/panel2.png) no-repeat right top;
+    width:385px;
+    background:url(../images/panel.png) no-repeat right top;
     position:absolute;
     left:0;
     top:0;
@@ -1231,4 +1231,22 @@ form input[type=submit]:hover {
     -moz-border-radius: 7px;
     border-radius: 7px;
     width: 750px;
+}
+#promocion{
+    background-color: #ffffff;
+    z-index: 2;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width: 1000px;
+    min-height:450px
+}
+#perfil{
+    background-color: #ffffff;
+    z-index: 2;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width: 1000px;
+    min-height:450px
 }

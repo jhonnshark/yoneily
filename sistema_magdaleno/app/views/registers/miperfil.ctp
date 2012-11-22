@@ -58,30 +58,31 @@
 		
 	<center>
 	<div id="perfil">
-	<div style="background-color: #ffffff; width: 485px; height: auto; float: left; margin-top: 20px; margin-left:160px;">
+	<div style="width: 485px; height: auto; margin-top: 20px; margin-left:70px;">
   
     <?php
         echo $this->Form->create('Register');//,array('controller'=>'registers','action'=>'actualizardatos')
 	?>
-    <img src="<?php echo $html->url('/',true)?>/images/start.png" style="height:190px;" /><h1 >Mi Perfil</h1>
-
-    <table border="0"  style="background-color: #ffffff;width:100%;">
+    <center><img src="<?php echo $html->url('/',true)?>/images/start.png" width="60" hight="60" /></center>
+     <h2>Mi Perfil</h2>
+<br><br>
+    <table border="0"  style="width:100%;">
            <tr>
-                <td class="capti">Email</td>
+                <td style="">Email:</td>
                 <td ><?php echo $this->Form->input('correo', array("label" => false,"size"=>"25")); ?></td>
             </tr>
             <tr>
-                <td class="capti par" style="background-color: #ffffff">Nombre y apellido</td>
-                <td style="background-color: #ffffff"><?php echo $this->Form->input('nombreape', array("label" => false,"size"=>"25",'maxlength'=>'50')); ?></td>
+                <td class="" style="background-color: #ffffff">Nombre y apellido:</td>
+                <td style=""><?php echo $this->Form->input('nombreape', array("label" => false,"size"=>"25",'maxlength'=>'50')); ?></td>
             </tr>
              <tr>
-                <td class="capti par" style="background-color: #ffffff">Numero de Celular</td>
-                <td style="background-color: #ffffff"><?php echo $this->Form->input('telefono', array("label" => false,"size"=>"25","maxlength"=>11)); ?></td>
+                <td >Numero de Celular:</td>
+                <td ><?php echo $this->Form->input('telefono', array("label" => false,"size"=>"25","maxlength"=>11)); ?></td>
             
             </tr>
 			<tr>
-                <td class="capti">Pa&iacute;s</td>
-                <td style="background-color: #ffffff; position:relative">
+                <td>Pa&iacute;s:</td>
+                <td style="position:relative">
                            <?php echo $this->Form->input('pais',array("type"=>"text","size"=>"25","label"=>false));?>
                     <div id="#someElem">
                     </div>
@@ -91,7 +92,7 @@
                 </td>
             </tr>
              <tr>
-                <td class="capti">Fecha Nacimiento</td>
+                <td class="">Fecha Nacimiento:</td>
                 <td>
 						<?php $fecha = date('Y')?>
                         <?php echo $this->Form->input('fechanac',array('label'=>false,'minYear'=>'1940','maxYear'=>$fecha,'dateFormat'=>'DMY','monthNames'=>array('Seleccione','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'))); ?>
@@ -100,8 +101,8 @@
                </td>
             </tr>
             <tr>
-                <td style="background-color: #ffffff" class="capti">Sexo</td>
-                <td style="background-color: #ffffff">
+                <td>Sexo:</td>
+                <td>
                            <?php
                             $options=array('M'=>'masculino','F'=>'femenino');
                             $attributes=array('legend'=>false,'class'=>'auto');
@@ -110,8 +111,8 @@
                 </td>
             </tr>
             <tr>
-                <td style="background-color: #ffffff" class="capti">Terminos y Condiciones</td>
-               <td style="background-color: #ffffff">
+                <td>Terminos y Condiciones</td>
+               <td>
                                   <?php
 
                                     echo $this->Form->input('tecon',array("class"=>"auto","label"=>false,"type"=>"checkbox"));
@@ -119,8 +120,8 @@
                </td>
             </tr>
             <tr>
-                <td style="background-color: #ffffff" class="capti">Sms y Correo</td>
-               <td style="background-color: #ffffff">
+                <td>Sms y Correo</td>
+               <td>
                                   <?php
 
                                     echo $this->Form->input('scor',array("class"=>"auto","label"=>false,"type"=>"checkbox"));
@@ -141,7 +142,7 @@
 			?>
             <tr>
 
-                <td colspan="2" style="background-color: #ffffff; text-align: center;"><?php echo $this->Form->submit('aceptar',array('class' => 'botonreg', 'title' => 'Custom Title')); ?></td>
+                <td colspan="2" style="text-align: center;"><?php echo $this->Form->submit('Aceptar',array('class' => 'botonreg', 'title' => 'Custom Title')); ?></td>
             </tr>
 
             </table>

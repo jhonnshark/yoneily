@@ -188,9 +188,8 @@ $('document').ready(function(){
 				    <ul class="nav">
 				        <li>
 				        <!--[if lte IE 6]><a class="ie6" href="#url"><table><tr><td><![endif]-->
-				            <ul class="panel2">
+				            <ul class="sub">
 				            	<li><a href="<?php echo $html->url('/')?>registers/miperfil/<?php echo $this->Session->read('keyus'); ?>"><b>Mi Perfil</b><div class="perfil"></div></a></li>
-				                <li><a href="<?php echo $html->url('/')?>ventas/misreclamos"><b>Denuncias</b><div class="claim"></div></a></li>
 				                <li><a href="<?php echo $html->url('/')?>ventas/miscompras"><b>Comprar</b><div class="buy"></div></a></li>
 				                <li><a href="<?php echo $html->url('/')?>registers/salir" ><b>Salir</b><div class="close"></div></a></li>
 				            </ul>
